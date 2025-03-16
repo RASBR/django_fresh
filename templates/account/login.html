@@ -80,7 +80,7 @@
           <div class="login-card login-dark">
             <div>
               <div>
-                <a class="logo" href="index.html"
+                <a class="logo" href="{% url 'landing' %}"
                   ><img
                     class="img-fluid for-light m-auto"
                     src="{% static 'assets/images/logo/logo1.png' %}"
@@ -129,7 +129,7 @@
                         >Remember password</label
                       >
                     </div>
-                    <a class="link" href="forget-password.html"
+                    <a class="link" href="{% url 'account_reset_password' %}"
                       >Forgot password?</a
                     >
                     <div class="text-end mt-3">
@@ -169,7 +169,9 @@
                     </ul>
                   </div>
                   <p class="mt-4 mb-0 text-center">
-                    Don't have account?<a class="ms-2" href="sign-up.html"
+                    Don't have account?<a
+                      class="ms-2"
+                      href="{% url 'account_signup' %}"
                       >Create Account</a
                     >
                   </p>

@@ -45,7 +45,7 @@
         <div class="col-12 p-0">    
           <div class="login-card login-dark">
             <div>
-              <div><a class="logo text-center" href="index.html"><img class="img-fluid for-light m-auto" src="{% static 'assets/images/logo/logo1.png' %}" alt="looginpage"><img class="img-fluid for-dark" src="{% static 'assets/images/logo/logo-dark.png' %}" alt="logo"></a></div>
+              <div><a class="logo text-center" href="{% url 'landing' %}"><img class="img-fluid for-light m-auto" src="{% static 'assets/images/logo/logo1.png' %}" alt="looginpage"><img class="img-fluid for-dark" src="{% static 'assets/images/logo/logo-dark.png' %}" alt="logo"></a></div>
               <div class="login-main"> 
                 <form class="theme-form">
                   <h2 class="text-center">Create your account</h2>
@@ -75,7 +75,8 @@
                   <div class="form-group mb-0 checkbox-checked">
                     <div class="form-check checkbox-solid-info">
                       <input class="form-check-input" id="solid6" type="checkbox">
-                      <label class="form-check-label" for="solid6">Agree with</label><a class="ms-3 link" href="forget-password.html">Privacy Policy</a>
+                      <label class="form-check-label" for="solid6">Agree with</label>
+                      <a class="ms-3 link" href="#" data-bs-toggle="modal" data-bs-target="#privacyPolicyModal">Privacy Policy</a>
                     </div>
                     <button class="btn btn-primary btn-block w-100 mt-3" type="submit">Create Account</button>
                   </div>
@@ -90,9 +91,45 @@
                       <li><a href="https://www.instagram.com" target="_blank"><i class="icon-instagram"></i></li>
                     </ul>
                   </div>
-                  <p class="mt-4 mb-0 text-center">Already have an account?<a class="ms-2" href="login.html">Sign in</a></p>
+                  <p class="mt-4 mb-0 text-center">Already have an account?<a class="ms-2" href="{% url 'account_login' %}">Sign in</a></p>
                 </form>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Privacy Policy Modal -->
+      <div class="modal fade" id="privacyPolicyModal" tabindex="-1" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3 class="modal-title fs-5" id="myLargeModalLabel">Privacy Policy</h3>
+              <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body dark-modal">
+              <div class="large-modal-header">
+                <i class="fa-solid fa-angles-right"></i>
+                <h6>Information Collection</h6>
+              </div>
+              <p class="modal-padding-space">We collect information that you provide directly to us when registering, using our services, or communicating with us.</p>
+
+              <div class="large-modal-header">
+                <i class="fa-solid fa-angles-right"></i>
+                <h6>Data Usage</h6>
+              </div>
+              <p class="modal-padding-space">We use the information we collect to provide, maintain, and improve our services, and to protect our users.</p>
+
+              <div class="large-modal-header">
+                <i class="fa-solid fa-angles-right"></i>
+                <h6>Data Protection</h6>
+              </div>
+              <p class="modal-padding-space">We implement appropriate security measures to protect your personal information against unauthorized access or disclosure.</p>
+
+              <div class="large-modal-header">
+                <i class="fa-solid fa-angles-right"></i>
+                <h6>Your Rights</h6>
+              </div>
+              <p class="modal-padding-space">You have the right to access, update, or delete your personal information. You can also opt out of marketing communications at any time.</p>
             </div>
           </div>
         </div>

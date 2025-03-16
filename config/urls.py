@@ -25,6 +25,7 @@ urlpatterns = [
     path('profile/', TemplateView.as_view(template_name='account/profile.html'), name='account_profile'),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('privacy-policy/', TemplateView.as_view(template_name='others/privacy-policy.html'), name='privacy_policy'),
 ]
 
 if settings.DEBUG:

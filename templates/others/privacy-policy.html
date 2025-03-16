@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - Admiro</title>
+    <!-- Favicon icon-->
+    <link
+      rel="icon"
+      href="{% static 'assets/images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <!-- App css -->
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
+    <link
+      id="color"
+      rel="stylesheet"
+      href="{% static 'assets/css/color-1.css' %}"
+      media="screen"
+    />
+  </head>
+  <body>
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title fs-5" id="myLargeModalLabel">
+            Privacy Policy
+          </h3>
+          <a
+            href="{% url 'account_signup' %}"
+            class="btn-close"
+            aria-label="Close"
+          ></a>
+        </div>
+        <div class="modal-body dark-modal">
+          <div class="large-modal-header">
+            <i class="fa-solid fa-angles-right"></i>
+            <h6>Information Collection</h6>
+          </div>
+          <p class="modal-padding-space">
+            We collect information that you provide directly to us when
+            registering, using our services, or communicating with us.
+          </p>
+
+          <div class="large-modal-header">
+            <i class="fa-solid fa-angles-right"></i>
+            <h6>Data Usage</h6>
+          </div>
+          <p class="modal-padding-space">
+            We use the information we collect to provide, maintain, and improve
+            our services, and to protect our users.
+          </p>
+
+          <div class="large-modal-header">
+            <i class="fa-solid fa-angles-right"></i>
+            <h6>Data Protection</h6>
+          </div>
+          <p class="modal-padding-space">
+            We implement appropriate security measures to protect your personal
+            information against unauthorized access or disclosure.
+          </p>
+
+          <div class="large-modal-header">
+            <i class="fa-solid fa-angles-right"></i>
+            <h6>Your Rights</h6>
+          </div>
+          <p class="modal-padding-space">
+            You have the right to access, update, or delete your personal
+            information. You can also opt out of marketing communications at any
+            time.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="{% static 'assets/js/vendors/jquery/jquery.min.js' %}"></script>
+    <script
+      src="{% static 'assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js' %}"
+      defer=""
+    ></script>
+  </body>
+</html>
