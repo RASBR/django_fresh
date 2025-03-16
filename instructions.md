@@ -40,3 +40,32 @@ django_fresh/
 ├── venv/
 └── ...other files
 ```
+
+---
+
+Creating a superuser in Django doesn't require django-allauth. The superuser functionality is built into Django's authentication system.
+
+To create a superuser, first make sure your database is set up by running migrations, then create the superuser:
+
+1. Run migrations first:
+
+```bash
+python manage.py migrate
+```
+
+2. Then create a superuser:
+
+```bash
+python manage.py createsuperuser
+```
+
+You'll be prompted to enter:
+
+- Username
+- Email address (optional)
+- Password (it won't be visible as you type)
+- Password confirmation
+
+After completing these steps, you'll have a superuser account that can access the Django admin interface at http://localhost:8000/admin/
+
+Would you like to test if it works by running the development server?
