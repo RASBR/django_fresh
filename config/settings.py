@@ -155,6 +155,7 @@ ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 LOGIN_REDIRECT_URL = '/'
 LOGIN_URL = 'account_login'
 ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
+ACCOUNT_SIGNUP_REDIRECT_URL = '/accounts/profile/'  # Add this line
 
 # Email settings (for development)
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
