@@ -82,3 +82,36 @@ Add the below to .gitignore
 
 admiro/
 ```
+
+Let me help structure this change. We need to update all SVG fragment identifiers in the static URLs.
+
+Step-by-step:
+
+1. Move the fragment identifier (#) outside of the static tag
+2. Apply across all templates
+
+### [user-profile.html](file:///d%3A/Django/django_fresh/templates/account/user-profile.html)
+
+This is the main file that needs updates. Here's how to modify the SVG references:
+
+```html
+// ...existing code...
+<use href="{% static 'assets/svg/iconly-sprite.svg' %}#Category"></use>
+// ...existing code...
+<use href="{% static 'assets/svg/iconly-sprite.svg' %}#Search"></use>
+// ...existing code...
+<use href="{% static 'assets/svg/iconly-sprite.svg' %}#moondark"></use>
+// ...existing code...
+```
+
+To make icons work:
+The pattern to follow is:
+
+- Change: `href="{% static 'assets/svg/iconly-sprite.svg#Search' %}"`
+- To: `href="{% static 'assets/svg/iconly-sprite.svg' %}#Search"`
+
+Repeat this pattern for all SVG fragment identifiers in all your HTML templates. This change ensures better URL handling while maintaining the fragment identifier functionality.
+
+Note: This change needs to be applied across all template files that use SVG sprites. Would you like me to show the changes for the other template files as well?
+
+Made changes.
