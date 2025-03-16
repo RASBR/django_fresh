@@ -66,6 +66,19 @@ You'll be prompted to enter:
 - Password (it won't be visible as you type)
 - Password confirmation
 
+3. Run the server
+
+```cmd
+python manage.py runserver
+```
+
 After completing these steps, you'll have a superuser account that can access the Django admin interface at http://localhost:8000/admin/
 
-Would you like to test if it works by running the development server?
+Copy template original files to folder admiro/
+Add the below to .gitignore
+
+```markdown
+# My template original files
+
+admiro/
+```
