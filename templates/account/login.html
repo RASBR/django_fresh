@@ -91,7 +91,12 @@
                 /></a>
               </div>
               <div class="login-main">
-                <form class="theme-form">
+                <form
+                  class="theme-form"
+                  method="post"
+                  action="{% url 'account_login' %}"
+                >
+                  {% csrf_token %}
                   <h2 class="text-center">Sign in to account</h2>
                   <p class="text-center">
                     Enter your email &amp; password to login
