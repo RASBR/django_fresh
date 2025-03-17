@@ -6,7 +6,7 @@ Open your terminal
 Navigate to your project directory (d:\Django\django_fresh)
 Run these commands:
 
-```cmd
+```bash
 python -m venv venv
 venv\Scripts\activate  # On Windows
 pip install django
@@ -14,7 +14,7 @@ pip install django
 
 After running these commands, you'll have a virtual environment with Django installed. The directory structure will look like:
 
-```text
+```bash
 django_fresh/
 ├── venv/
 └── ...other files
@@ -24,7 +24,7 @@ Step 2: Create a new Django project
 
 Run this command in your terminal (make sure your virtual environment is activated):
 
-```cmd
+```bash
 django-admin startproject config .
 ```
 
@@ -68,7 +68,7 @@ You'll be prompted to enter:
 
 3. Run the server
 
-```cmd
+```bash
 python manage.py runserver
 ```
 
@@ -113,5 +113,14 @@ The pattern to follow is:
 Repeat this pattern for all SVG fragment identifiers in all your HTML templates. This change ensures better URL handling while maintaining the fragment identifier functionality.
 
 Note: This change needs to be applied across all template files that use SVG sprites. Would you like me to show the changes for the other template files as well?
+
+The pattern to follow is:
+
+Change: href="{% static 'assets/svg/iconly-sprite.svg#Search' %}"
+To: href="{% static 'assets/svg/iconly-sprite.svg' %}#Search"
+
+"../assets/images/favicon.png" becomes "{% static 'assets/images/favicon.png' %}"
+"../assets/js/vendors/bootstrap/dist/js/popper.min.js" becomes {% static 'assets/js/vendors/bootstrap/dist/js/popper.min.js' %}"
+"../assets/css/bulk-style.css" becomes {% static 'assets/css/bulk-style.css' %}"
 
 Made changes.
