@@ -7,29 +7,29 @@
   <meta name="description" content="Pixelstrap - Admin Document" />
   <meta name="keywords" content="Pixelstrap - Admin Document" />
   <meta name="author" content="pixelstrap" />
-  <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" />
-  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon" />
+  <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon" />
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon" />
   <title>Pixelstrap - Admin Document</title>
   <!-- Google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <!-- Font Awesome-->
-      <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/all.min.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/fontawesome.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/brands.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/solid.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/regular.css"/>
+      <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/all.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/fontawesome.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/brands.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/solid.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/regular.css' %}"/>
   <!-- Feather icon-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/feather-icon/feather-icon.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/feather-icon/feather-icon.css' %}" />
   <!-- animate-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/animate/animate.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/animate/animate.css' %}" />
   <!-- Bootstrap css-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/bootstrap/bootstrap.css' %}" />
   <!-- App css-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}" />
   <!-- document css-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document.css' %}" />
   
 </head>
 <body class="document full-width-doc sticky-nav-doc">
@@ -44,7 +44,7 @@
     <div class="home-section">
       <nav class="navbar navbar-expand-lg">
         <div class="container custom-container">
-          <div class="main-menu"><a class="navbar-brand" href="index.html"> <img src="../assets/images/logo/logo.png"
+          <div class="main-menu"><a class="navbar-brand" href="index.html"> <img src="{% static 'assets/images/logo/logo.png' %}"
                 alt=""></a>
             <div>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -101,7 +101,7 @@
         </div>
       </div>
       <div class="effect-sec">
-        <img src="../assets/images/girl.png" class="img-fluid girl-img" alt="">
+        <img src="{% static 'assets/images/girl.png' %}" class="img-fluid girl-img" alt="">
       </div>
     </div>
   </div>
@@ -111,7 +111,7 @@
         <aside>
           <ul class="list-unstyled nav-sidebar doc-nav">
             <li class="nav-item">
-              <div class="title"><a class="nav-link" href="index.html"><img src="../assets/images/document/html.png"
+              <div class="title"><a class="nav-link" href="index.html"><img src="{% static 'assets/images/document/html.png' %}"
                     alt="" />Getting Started</a></div>
               <ul class="dropdown-nav">
                 <li class="nav-item"><a class="nav-link" href="index.html">Getting Started</a></li>
@@ -125,7 +125,7 @@
             <li class="nav-item">
               <div class="title">
                 <a href="structure.html" class="nav-link px-0">
-                  <img src="../assets/images/document/html.png" alt="" />
+                  <img src="{% static 'assets/images/document/html.png' %}" alt="" />
                   HTML structure
                 </a>
               </div>
@@ -133,7 +133,7 @@
             <li class="nav-item">
               <div class="title">
                 <a href="dark-mode.html" class="nav-link px-0">
-                  <img src="../assets/images/document/html.png" alt="" />
+                  <img src="{% static 'assets/images/document/html.png' %}" alt="" />
                   Dark Layout
                 </a>
               </div>
@@ -141,14 +141,14 @@
             <li class="nav-item mb-2">
               <div class="title">
                 <a href="rtl.html" class="nav-link px-0">
-                  <img src="../assets/images/document/html.png" alt="" />
+                  <img src="{% static 'assets/images/document/html.png' %}" alt="" />
                   RTL Layout
                 </a>
               </div>
             </li>
             <li class="nav-item">
               <div class="title"><a class="nav-link" href="page-customizer.html"><img
-                    src="../assets/images/document/html.png" alt="" />Customization</a></div>
+                    src="{% static 'assets/images/document/html.png' %}" alt="" />Customization</a></div>
               <ul class="dropdown-nav">
                 <li class="nav-item"><a class="nav-link" href="page-customizer.html">Customizer</a></li>
                 <li class="nav-item"><a class="nav-link" href="page-color.html">Color</a></li>
@@ -159,7 +159,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <div class="title"><a class="nav-link" href="basic-ui.html"><img src="../assets/images/document/html.png"
+              <div class="title"><a class="nav-link" href="basic-ui.html"><img src="{% static 'assets/images/document/html.png' %}"
                     alt="" />Components </a></div>
               <ul class="dropdown-nav">
                 <li class="nav-item"><a class="nav-link" href="basic-ui.html">Basic UI Elements</a></li>
@@ -178,18 +178,18 @@
             </li>
             <li class="nav-item">
               <div class="title">
-                <a class="nav-link" href="accordian.html"><img src="../assets/images/document/html.png" alt="" />Faq</a>
+                <a class="nav-link" href="accordian.html"><img src="{% static 'assets/images/document/html.png' %}" alt="" />Faq</a>
               </div>
             </li>
             <li class="nav-item">
               <div class="title">
-                <a class="nav-link" href="credits.html"><img src="../assets/images/document/html.png"
+                <a class="nav-link" href="credits.html"><img src="{% static 'assets/images/document/html.png' %}"
                     alt="" />Credits</a>
               </div>
             </li>
             <li class="nav-item">
               <div class="title">
-                <a class="nav-link" href="change-log.html"><img src="../assets/images/document/html.png" alt="" />Change
+                <a class="nav-link" href="change-log.html"><img src="{% static 'assets/images/document/html.png' %}" alt="" />Change
                   log</a>
               </div>
             </li>
@@ -221,7 +221,7 @@
               </div>
               <div class="card-body p-t-0">
                 <p class="card-text">I like that it provides you with so many options out of the box</p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>Hello</p>
@@ -249,7 +249,7 @@
               <div class="card-body p-t-0">
                 <p class="card-text">This is amazing! Seriously great job right here. Please increase price because you
                   are simply offering this nearly for free</p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>thanks for loving theme :)</p>
@@ -277,7 +277,7 @@
                   to purchase it. Beautiful design all across. Prebuilt integration with firebase auth, light and dark
                   theme.</p>
                 <p>A very very good template.</p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>thanks for 2 purchase in a week , best of luck for your projects :) and price is going to high
@@ -322,7 +322,7 @@
               </div>
               <div class="card-body p-t-0">
                 <p class="card-text">The support is amazing! </p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>Thanks :)</p>
@@ -348,7 +348,7 @@
               <div class="card-body p-t-0">
                 <p class="card-text">The codes very clean with great design and also nice customer supports. Love it
                   very much!</p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>Thanks for loving admin :)</p>
@@ -374,7 +374,7 @@
               <div class="card-body p-t-0">
                 <p class="card-text">Customer support is excelent. whenever have problem and not uderstand their support
                   section always helps me. and Admin panel is very nice. Thanks</p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>Thanks for loving our theme and support , wish you great luck for your project :)</p>
@@ -401,7 +401,7 @@
                 <p class="card-text">Nice theme with developer friendly code quality. Looks great after integration in
                   my project.</p>
                 <p> Highly recommended...</p>
-                <div class="media"><img class="align-self-start me-2" src="../assets/images/document/review.jpg"
+                <div class="media"><img class="align-self-start me-2" src="{% static 'assets/images/document/review.jpg' %}"
                     alt="Generic placeholder image">
                   <div class="media-body">
                     <p>Thanks for loving Admiro :)</p>
@@ -444,13 +444,15 @@
   </footer>
 </body>
 <!-- latest jquery-->
-<script src="../assets/js/document/jquery/jquery.min.js"></script>
+<script src="{% static 'assets/js/document/jquery/jquery.min.js' %}"></script>
 <!-- Bootstrap js-->
-<script src="../assets/js/document/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="{% static 'assets/js/document/bootstrap/bootstrap.bundle.min.js' %}"></script>
 <!-- popover js-->
 <!-- code copy box js-->
 <!-- feather icon js-->
-<script src="../assets/js/document/feather-icon/feather.min.js"></script>
-<script src="../assets/js/document/feather-icon/feather-icon.js"></script>
-<script src="../assets/js/document/main.js"></script>
+<script src="{% static 'assets/js/document/feather-icon/feather.min.js' %}"></script>
+<script src="{% static 'assets/js/document/feather-icon/feather-icon.js' %}"></script>
+<script src="{% static 'assets/js/document/main.js' %}"></script>
 </html>
+```
+</copilot-edited-file>  

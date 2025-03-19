@@ -1,0 +1,1684 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Pixelstrap - Admin Document" />
+    <meta name="keywords" content="Pixelstrap - Admin Document" />
+    <meta name="author" content="pixelstrap" />
+    <link
+      rel="icon"
+      href="{% static 'assets/images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="{% static 'assets/images/favicon.png' %}"
+      type="image/x-icon"
+    />
+    <title>Pixelstrap - Admin Document</title>
+    <!-- Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/document-css/tree/tree.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/document-css/prism/prism.css' %}"
+    />
+    <!-- Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/document-css/fontawesome-free/css/all.min.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/document-css/fontawesome-free/css/fontawesome.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/document-css/fontawesome-free/css/brands.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/document-css/fontawesome-free/css/solid.css' %}"
+    />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/document-css/fontawesome-free/css/regular.css' %}"
+    />
+    <!-- Feather icon-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/document-css/feather-icon/feather-icon.css' %}"
+    />
+    <!-- animate-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/document-css/animate/animate.css' %}"
+    />
+    <!-- Bootstrap css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/document-css/bootstrap/bootstrap.css' %}"
+    />
+    <!-- App css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/style.css' %}"
+    />
+    <!-- document css-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'assets/css/document.css' %}"
+    />
+  </head>
+  <body class="document full-width-doc sticky-nav-doc">
+    <!-- tap on top starts-->
+    <div class="tap-top">
+      <i data-feather="chevrons-up"></i>
+      <p>Top</p>
+    </div>
+    <!-- tap on tap ends-->
+    <div>
+      <div class="home-section">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container custom-container">
+            <div class="main-menu">
+              <a class="navbar-brand" href="index.html">
+                <img src="{% static 'assets/images/logo/logo.png' %}" alt=""
+              /></a>
+              <div>
+                <button
+                  class="navbar-toggler collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <i class="fa fa-bars"> </i>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav menu">
+                    <li class="nav-item active">
+                      <a
+                        class="nav-link"
+                        href="https://themeforest.net/user/pixelstrap/portfolio"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        target="_blank"
+                        >Purchase</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://support.pixelstrap.com/"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        target="_blank"
+                        >Support</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://admin.pixelstrap.net/admiro/template/landing-page.html"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        target="_blank"
+                        >Demo</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="https://admin.pixelstrap.net/admiro/template/landing-page.html#feature"
+                        role="button"
+                        aria-haspopup="true"
+                        aria-expanded="false"
+                        target="_blank"
+                        >Feature
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <ul class="nav-right">
+                <li>
+                  <div class="d-lg-none d-block">
+                    <a class="toggle-sidebar" href="#"
+                      ><i class="fa fa-sliders"></i
+                    ></a>
+                  </div>
+                </li>
+                <li>
+                  <div class="btn-group">
+                    <a
+                      class="decrease btn btn-doc"
+                      href="#"
+                      title="Decrease font size"
+                      >A-</a
+                    ><a
+                      class="reset btn btn-doc"
+                      href="#"
+                      title="Default font size"
+                      >A</a
+                    ><a
+                      class="increase btn btn-doc"
+                      href="#"
+                      title="Increase font size"
+                      >A+</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <a class="btn btn-light mode font-dark" href="#" title="Dark"
+                    ><i class="fa-regular fa-moon fa-fw"></i
+                    ><span>Dark</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="container custom-container">
+          <div class="search-input">
+            <div class="input-group mb-md-3 mb-0">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="search anything here"
+                aria-label="Recipient's username"
+                aria-describedby="basic-addon2"
+              />
+              <span class="input-group-text" id="basic-addon2"
+                ><i data-feather="search"></i
+              ></span>
+            </div>
+            <div class="popular-search">
+              <span>Popular Search:</span>
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><span class="badge bg-primary">Starter kit</span></a
+                  >
+                </li>
+                <li>
+                  <a href="basic-ui.html"
+                    ><span class="badge bg-primary">Element</span></a
+                  >
+                </li>
+                <li>
+                  <a href="advance-ui.html"
+                    ><span class="badge bg-primary">components</span></a
+                  >
+                </li>
+                <li>
+                  <a href="forms.html"
+                    ><span class="badge bg-primary">forms</span></a
+                  >
+                </li>
+                <li>
+                  <a href="tables.html"
+                    ><span class="badge bg-primary">tables</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="effect-sec">
+          <img
+            src="{% static 'assets/images/girl.png' %}"
+            class="img-fluid girl-img"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container custom-container">
+      <div class="document-main">
+        <div class="left-sidebar">
+          <aside>
+            <ul class="list-unstyled nav-sidebar doc-nav">
+              <li class="d-lg-none float-end">
+                <a href="javascript:void(0)" class="sidebar-close"
+                  ><i class="fa fa-angle-left"></i
+                ></a>
+              </li>
+              <li class="clearfix"></li>
+              <li class="nav-item">
+                <div class="title">
+                  <a class="nav-link" href="index.html"
+                    ><img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />Getting Started</a
+                  >
+                </div>
+                <ul class="dropdown-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Getting Started</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tree.html">Our Structure</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="feature-list.html"
+                      >Avaiable Features</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="customer-review.html"
+                      >Customer Reviews</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="options.html">Our Layouts</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a href="structure.html" class="nav-link px-0">
+                    <img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />
+                    HTML structure
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a href="dark-mode.html" class="nav-link px-0">
+                    <img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />
+                    Dark Layout
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item mb-2">
+                <div class="title">
+                  <a href="rtl.html" class="nav-link px-0">
+                    <img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />
+                    RTL Layout
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a class="nav-link" href="page-customizer.html"
+                    ><img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />Customization</a
+                  >
+                </div>
+                <ul class="dropdown-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="page-customizer.html"
+                      >Customizer</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="page-color.html">Color</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="page-css.html">CSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="page-scss.html">SCSS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="page-javascript.html"
+                      >javascript</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sidebar-type.html"
+                      >Sidebar type</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a class="nav-link" href="basic-ui.html"
+                    ><img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />Components
+                  </a>
+                </div>
+                <ul class="dropdown-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="basic-ui.html"
+                      >Basic UI Elements</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="advance-ui.html"
+                      >Advance UI Elements</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="animations.html">Animations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="icons.html">Icons</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="forms.html">Forms</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="tables.html">Tables</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="cards.html">Cards</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="timeline.html">Timeline</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="charts.html">Charts</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="maps.html">Maps</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="editors.html">Editors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="app.html">Applications</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a class="nav-link" href="accordian.html"
+                    ><img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />Faq</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a class="nav-link" href="credits.html"
+                    ><img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />Credits</a
+                  >
+                </div>
+              </li>
+              <li class="nav-item">
+                <div class="title">
+                  <a class="nav-link" href="change-log.html"
+                    ><img
+                      src="{% static 'assets/images/document/html.png' %}"
+                      alt=""
+                    />Change log</a
+                  >
+                </div>
+              </li>
+            </ul>
+          </aside>
+        </div>
+        <div class="content">
+          <div>
+            <h4 class="main-title mb-0">Js structure</h4>
+            <hr />
+            <p class="mb-4">
+              We are use some plugins for design template so we need to add
+              <code>plugin min js </code> and <code>custom script </code> also
+            </p>
+            <div id="treeBasic">
+              <ul>
+                <li data-jstree='{"opened":true}'>
+                  js
+                  <ul>
+                    <li data-jstree='{"opened":false}'>
+                      add-product
+                      <ul>
+                        <li
+                          class="js-icon"
+                          data-jstree='{"selected":false,"type":"file"}'
+                        >
+                          select4-custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      animation
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          aos
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              aos.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              aos-init.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          tilt
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              tilt.jquery.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              tilt-custom.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          wow
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              wow.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              wow-init.js
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      bookmark
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jquery.validate.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      bootstrap
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          bootstrap.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          popper.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      calendar
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          fullcalendar-custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          fullcalendar.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      chart
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          apex-chart
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              apex-chart.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              chart-custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              moment.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              stock-prices.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          chartist
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              chartist.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              chartist-custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              chartist-plugin-tooltip.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          chartjs
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              chart.custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              chart.min.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          flot-chart
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              excanvas.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              excanvas.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              flot-script.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.canvas.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.categories.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.crosshair.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.errorbars.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.fillbetween.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.image.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.navigate.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.pie.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.resize.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.selection.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.stack.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.symbol.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.threshold.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.flot.time.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          google
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              google-chart.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              google-chart-loader.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          knob
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              knob.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              knob-chart.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          morris-chart
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              morris.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              morris.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              morris-script.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              prettify.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              raphael.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          peity-chart
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              peity.jquery.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              peity-custom.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          sparkline
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              sparkline.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              sparkline-script.js
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      choices
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          add-post-custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      cleave
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          cleave.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-cleave.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      clipboard
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          clipboard.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          clipboard-script.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      contacts
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      counter
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          counter-custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jquery.counterup.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jquery.waypoints.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      custom-card
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-card.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      dashboard
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          dashboard_2.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          dashboard_3.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          default.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      datatable
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          datatable-extension
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              buttons.bootstrap4.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              buttons.colVis.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              buttons.html5.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              buttons.print.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.autoFill.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.bootstrap4.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.buttons.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.colReorder.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.fixedHeader.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.keyTable.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.responsive.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.rowReorder.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.scroller.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              dataTables.select.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jszip.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              pdfmake.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              responsive.bootstrap4.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              vfs_fonts.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          datatables
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              datatable.custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.dataTables.min.js
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      datepicker
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          date-picker
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              datepicker.custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              datepicker.en.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              datepicker.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          daterange-picker
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              daterangepicker.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              daterange-picker.custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              moment.min.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          date-time-picker
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              datetimepicker.custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              moment.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              tempusdominus-bootstrap-4.min.js
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      dropzone
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          dropzone.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          dropzone-scrip.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          dropzone-script.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      editor
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          ace-editor
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              ace.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              ace-custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              mode-css.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              mode-html.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              mode-javascript.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              mode-php.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              theme-monokai.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              worker-css.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              worker-html.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              worker-javascript.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              worker-php.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          ckeditor
+                          <ul>
+                            <li data-jstree='{"opened":false}'>
+                              adapters
+                              <ul>
+                                <li
+                                  class="js-icon"
+                                  data-jstree='{"type":"file"}'
+                                >
+                                  jquery.js
+                                </li>
+                              </ul>
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              build-config.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              ckeditor.custom.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              ckeditor.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              config.js
+                            </li>
+                            <li class="css-icon" data-jstree='{"type":"file"}'>
+                              contents.css
+                            </li>
+                            <li data-jstree='{"opened":false}'>lang</li>
+                            <li data-jstree='{"opened":false}'>plugins</li>
+                            <li data-jstree='{"opened":false}'>skins</li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              styles.js
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      editors
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-quill.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          quill.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          simplemde.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      emoji-js
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-emoji.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-emojis.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          uikit.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      filepond
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-filepond.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-file-rename.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-file-validate-size.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-image-crop.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-image-exif-orientation.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-image-preview.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-image-resize.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          filepond-plugin-image-transform.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          tooltip-init.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      flat-pickr
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-flatpickr.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          flatpickr.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      form-wizard
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          form-wizard.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          form-wizard-five.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          form-wizard-three.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          form-wizard-two.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jquery.backstretch.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      icon
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          feather-icon
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              feather.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              feather-icon.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              feather-icon-clipart.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          flag-icon-clipart.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          icon-clipart.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          icons-notify.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          whether-icon-clipart.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      image-cropper
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          cropper.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          cropper-main.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      internationalization
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          language-picker.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      jkanban
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jkanban.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      js-datatables
+                      <ul>
+                        <li data-jstree='{"opened":false}'>datatables</li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          simple-datatables@latest
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      jsgrid
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          griddata.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jsgrid.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jsgrid.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      landing
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          landing.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      letter-box
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-mail-pagination.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-usermail.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      modalpage
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          validation-modal.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      notify
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          bootstrap-notify.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          index.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          notify-script.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      owlcarousel
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          owl.carousel.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          owl-custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      photoswipe
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          photoswipe.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          photoswipe.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          photoswipe-ui-default.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      prism
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          prism.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      product
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-order-product.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-product.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom-swiper.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          order-custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          product-list-custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          product-tab.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      range
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          range-custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          rangeslider.nostyle.umd.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          rangeslider.umd.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      range-slider
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          rangeslider.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      scrollbar
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          simplebar.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      select2
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          select2.full.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          select2-custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      slick
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          slick.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          slick.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      sweet-alert
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          app.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          sweetalert.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      swiper
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          swiper-custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      theme-customizer
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          customizer.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      timeline
+                      <ul>
+                        <li data-jstree='{"opened":false}'>
+                          timeline-v-1
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              main.js
+                            </li>
+                          </ul>
+                        </li>
+                        <li data-jstree='{"opened":false}'>
+                          timeline-v-2
+                          <ul>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              jquery.timeliny.min.js
+                            </li>
+                            <li class="js-icon" data-jstree='{"type":"file"}'>
+                              timeline-v-2-custom.js
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      todo
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          todo.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      touchspin
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          input-groups.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          touchspin.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          vendors.min.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      touchspin_2
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          custom_touchspin
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      tour
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          intro.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          intro-init.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      tree
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jstree.min.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          tree.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      typeahead
+                      <ul>
+                        <li data-jstree='{"opened":false}'>data</li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          handlebars.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          typeahead.bundle.js
+                        </li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          typeahead.custom.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      vector-map
+                      <ul>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          jquery-jvectormap-2.0.2.min.js
+                        </li>
+                        <li data-jstree='{"opened":false}'>map</li>
+                        <li class="js-icon" data-jstree='{"type":"file"}'>
+                          map-vector.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      vendors
+                      <ul>
+                        <li data-jstree='{"opened":false}'>bootstrap</li>
+                        <li data-jstree='{"opened":false}'>choices.js</li>
+                        <li data-jstree='{"opened":false}'>datamaps</li>
+                        <li data-jstree='{"opened":false}'>feather-icon</li>
+                        <li data-jstree='{"opened":false}'>font-awesome</li>
+                        <li data-jstree='{"opened":false}'>jquery</li>
+                        <li data-jstree='{"opened":false}'>range-slider</li>
+                        <li data-jstree='{"opened":false}'>react-dom</li>
+                        <li data-jstree='{"opened":false}'>simplebar</li>
+                        <li data-jstree='{"opened":false}'>sortablejs</li>
+                        <li data-jstree='{"opened":false}'>swiper</li>
+                        <li data-jstree='{"opened":false}'>@yaireo</li>
+                      </ul>
+                    </li>
+                    <li data-jstree='{"opened":false}'>
+                      widget
+                      <ul>
+                        <li class="js-icon" data-jstree='{"opened":false}'>
+                          general-widget.js
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      alert.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      chart-widget.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      common-chat.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      config.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      countdown.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      custom-add-product.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      custom-add-product3.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      custom-inputsearch.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      custom-list-product.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      custom-wizard.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      datamap-custom.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      draggable-custom.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      ecommerce.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      form-validation-custom.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      form-validation-custom copy.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      header-slick.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      height-equal.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      isotope.pkgd.min.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      masonry-gallery.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      modal-animated.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      password.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      popover.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      print.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      rating-custom.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      Rating-Index
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      rating-js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      script.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      sidebar.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      support-ticket-custom.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      telephone-inpu.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      toasts-custom.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      tooltip.js
+                    </li>
+                    <li class="js-icon" data-jstree='{"opened":false}'>
+                      tooltip-init.js
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="dark-block mt-4">
+              <b>Tips</b>
+              <p>
+                If you want to add <code>new js </code>so you can add in
+                <code>script.js </code>file
+              </p>
+              <p class="mb-0">
+                because we are <code>update template </code>in future at that
+                time you can take update template <code>easily </code>and use it
+              </p>
+              <p>
+                only one <code>script </code>js file you need to put from your
+                side
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="left-sidebar right-part">
+          <aside>
+            <ul class="list-unstyled nav-sidebar doc-nav">
+              <li class="nav-item">
+                <div class="title">Quick Links</div>
+                <ul class="dropdown-nav ps-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://admin.pixelstrap.net/admiro/template/index.html"
+                      target="_blank"
+                      ><i class="fa fa-angle-right me-2"></i>Preview</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://support.pixelstrap.com/support/home"
+                      target="_blank"
+                      ><i class="fa fa-angle-right me-2"></i>Ask a Question</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="https://themeforest.net/user/pixelstrap/portfolio"
+                      target=" _blank"
+                      ><i class="fa fa-angle-right me-2"></i>Buy Now</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="container">
+        <div class="row footer-theme partition-f">
+          <div class="col-12">Copyright 2024 © Admiro theme by pixelstrap</div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- latest jquery-->
+  <script src="{% static 'assets/js/document/jquery/jquery.min.js' %}"></script>
+  <!-- Bootstrap js-->
+  <script src="{% static 'assets/js/document/bootstrap/bootstrap.bundle.min.js' %}"></script>
+  <!-- feather icon js-->
+  <script src="{% static 'assets/js/document/feather-icon/feather.min.js' %}"></script>
+  <script src="{% static 'assets/js/document/feather-icon/feather-icon.js' %}"></script>
+  <!-- popover js-->
+  <!-- code copy box js-->
+  <script src="{% static 'assets/js/document/prism/prism.min.js' %}"></script>
+  <script src="{% static 'assets/js/document/clipboard/clipboard.min.js' %}"></script>
+  <script src="{% static 'assets/js/document/custom-card/custom-card.js' %}"></script>
+  <script src="{% static 'assets/js/document/main.js' %}"></script>
+  <script src="{% static 'assets/js/document/tree/jstree.min.js' %}"></script>
+  <script src="{% static 'assets/js/document/tree/tree.js' %}"></script>
+</html>

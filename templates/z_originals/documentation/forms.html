@@ -8,34 +8,34 @@
   <meta name="description" content="Pixelstrap - Admin Document">
   <meta name="keywords" content="Pixelstrap - Admin Document">
   <meta name="author" content="pixelstrap">
-  <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-  <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+  <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
   <title>Pixelstrap - Admin Document</title>
   <!-- Google font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/themify-icons/css/themify.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/prism/prism.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/date-picker/date-picker.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/select2/select2.css">
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/typehead/choices.min.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/themify-icons/css/themify.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/prism/prism.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/date-picker/date-picker.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/select2/select2.css' %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/typehead/choices.min.css' %}">
   <!-- Font Awesome-->
-    <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/all.min.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/fontawesome.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/brands.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/solid.css"/>
-  <link rel="stylesheet" href="../assets/css/document-css/fontawesome-free/css/regular.css"/>
+    <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/all.min.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/fontawesome.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/brands.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/solid.css' %}"/>
+  <link rel="stylesheet" href="{% static 'assets/css/document-css/fontawesome-free/css/regular.css' %}"/>
   <!-- Feather icon-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/feather-icon/feather-icon.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/feather-icon/feather-icon.css' %}" />
   <!-- animate-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/animate/animate.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/animate/animate.css' %}" />
   <!-- Bootstrap css-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document-css/bootstrap/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document-css/bootstrap/bootstrap.css' %}" />
   <!-- App css-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/style.css' %}">
   <!-- document css-->
-  <link rel="stylesheet" type="text/css" href="../assets/css/document.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'assets/css/document.css' %}" />
 </head>
 
 <body class="document full-width-doc sticky-nav-doc" data-bs-spy="scroll" data-bs-target="#myScrollspy"
@@ -49,7 +49,7 @@
     <div class="home-section">
       <nav class="navbar navbar-expand-lg">
         <div class="container custom-container">
-          <div class="main-menu"><a class="navbar-brand" href="index.html"> <img src="../assets/images/logo/logo.png"
+          <div class="main-menu"><a class="navbar-brand" href="index.html"> <img src="{% static 'assets/images/logo/logo.png' %}"
                 alt=""></a>
             <div>
               <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
@@ -106,7 +106,7 @@
         </div>
       </div>
       <div class="effect-sec">
-        <img src="../assets/images/girl.png" class="img-fluid girl-img" alt="">
+        <img src="{% static 'assets/images/girl.png' %}" class="img-fluid girl-img" alt="">
       </div>
     </div>
   </div>
@@ -116,7 +116,7 @@
         <aside>
           <ul class="list-unstyled nav-sidebar doc-nav">
             <li class="nav-item">
-              <div class="title"><a class="nav-link" href="index.html"><img src="../assets/images/document/html.png"
+              <div class="title"><a class="nav-link" href="index.html"><img src="{% static 'assets/images/document/html.png' %}"
                     alt="" />Getting Started</a></div>
               <ul class="dropdown-nav">
                 <li class="nav-item"><a class="nav-link" href="index.html">Getting Started</a></li>
@@ -130,7 +130,7 @@
             <li class="nav-item">
               <div class="title">
                 <a href="structure.html" class="nav-link px-0">
-                  <img src="../assets/images/document/html.png" alt="" />
+                  <img src="{% static 'assets/images/document/html.png' %}" alt="" />
                   HTML structure
                 </a>
               </div>
@@ -138,7 +138,7 @@
             <li class="nav-item">
               <div class="title">
                 <a href="dark-mode.html" class="nav-link px-0">
-                  <img src="../assets/images/document/html.png" alt="" />
+                  <img src="{% static 'assets/images/document/html.png' %}" alt="" />
                   Dark Layout
                 </a>
               </div>
@@ -146,14 +146,14 @@
             <li class="nav-item mb-2">
               <div class="title">
                 <a href="rtl.html" class="nav-link px-0">
-                  <img src="../assets/images/document/html.png" alt="" />
+                  <img src="{% static 'assets/images/document/html.png' %}" alt="" />
                   RTL Layout
                 </a>
               </div>
             </li>
             <li class="nav-item">
               <div class="title"><a class="nav-link" href="page-customizer.html"><img
-                    src="../assets/images/document/html.png" alt="" />Customization</a></div>
+                    src="{% static 'assets/images/document/html.png' %}" alt="" />Customization</a></div>
               <ul class="dropdown-nav">
                 <li class="nav-item"><a class="nav-link" href="page-customizer.html">Customizer</a></li>
                 <li class="nav-item"><a class="nav-link" href="page-color.html">Color</a></li>
@@ -164,7 +164,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <div class="title"><a class="nav-link" href="basic-ui.html"><img src="../assets/images/document/html.png"
+              <div class="title"><a class="nav-link" href="basic-ui.html"><img src="{% static 'assets/images/document/html.png' %}"
                     alt="" />Components </a></div>
               <ul class="dropdown-nav">
                 <li class="nav-item"><a class="nav-link" href="basic-ui.html">Basic UI Elements</a></li>
@@ -183,18 +183,18 @@
             </li>
             <li class="nav-item">
               <div class="title">
-                <a class="nav-link" href="accordian.html"><img src="../assets/images/document/html.png" alt="" />Faq</a>
+                <a class="nav-link" href="accordian.html"><img src="{% static 'assets/images/document/html.png' %}" alt="" />Faq</a>
               </div>
             </li>
             <li class="nav-item">
               <div class="title">
-                <a class="nav-link" href="credits.html"><img src="../assets/images/document/html.png"
+                <a class="nav-link" href="credits.html"><img src="{% static 'assets/images/document/html.png' %}"
                     alt="" />Credits</a>
               </div>
             </li>
             <li class="nav-item">
               <div class="title">
-                <a class="nav-link" href="change-log.html"><img src="../assets/images/document/html.png" alt="" />Change
+                <a class="nav-link" href="change-log.html"><img src="{% static 'assets/images/document/html.png' %}" alt="" />Change
                   log</a>
               </div>
             </li>
@@ -331,7 +331,7 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#validationjs" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="validationjs">&lt;!-- Validation JS --&gt;
-&lt;script src=&quot;../assets/js/form-validation-custom.js&quot; &gt;&lt;/script&gt;</code></pre>
+&lt;script src=&quot;{% static 'assets/js/form-validation-custom.js' %}&quot; &gt;&lt;/script&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -526,9 +526,9 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#datepickerjs" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="datepickerjs">&lt;!-- Datepicker JS --&gt;
-&lt;script src="../assets/js/datepicker/date-picker/datepicker.js"&gt;&lt;/script&gt;
-&lt;script src="../assets/js/datepicker/date-picker/datepicker.en.js"&gt;&lt;/script&gt;
-&lt;script src="../assets/js/datepicker/date-picker/datepicker.custom.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{% static 'assets/js/datepicker/date-picker/datepicker.js' %}"&gt;&lt;/script&gt;
+&lt;script src="{% static 'assets/js/datepicker/date-picker/datepicker.en.js' %}"&gt;&lt;/script&gt;
+&lt;script src="{% static 'assets/js/datepicker/date-picker/datepicker.custom.js' %}"&gt;&lt;/script&gt;</code></pre>
               </div>
               <h5 class="pt-3 pb-2 inner-sub-title mt-0">You have to add the following style css file for the datepicker
                 design</h5>
@@ -536,7 +536,7 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#datepickercss" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="datepickercss">&lt;!-- Datepicker CSS --&gt;
-&lt;link rel="stylesheet" type="text/css" href="../assets/css/vendors/date-picker.css"&gt;</code></pre>
+&lt;link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/date-picker.css' %}"&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -602,7 +602,7 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#touchspinjs" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="touchspinjs">&lt;!-- Touchspin JS --&gt;
-&lt;script src="../assets/js/document/touchspin/touchspin.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{% static 'assets/js/document/touchspin/touchspin.js' %}"&gt;&lt;/script&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -644,8 +644,8 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#select2js" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="select2js">&lt;!-- Touchspin JS --&gt;
-&lt;script src="../assets/js/select2/select2.full.min.js"&gt;&lt;/script&gt;
-&lt;script src="../assets/js/select2/select2-custom.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{% static 'assets/js/select2/select2.full.min.js' %}"&gt;&lt;/script&gt;
+&lt;script src="{% static 'assets/js/select2/select2-custom.js' %}"&gt;&lt;/script&gt;</code></pre>
               </div>
               <h5 class="pt-3 pb-2 inner-sub-title mt-0">You have to add the following style css file for the select2
                 design</h5>
@@ -653,7 +653,7 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#select2css" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="select2css">&lt;!-- Select 2 CSS --&gt;
-&lt;link rel="stylesheet" type="text/css" href="../assets/css/vendors/select2.css"&gt;</code></pre>
+&lt;link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/select2.css' %}"&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -709,10 +709,10 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#typeaheadjs" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="typeaheadjs">&lt;!-- Typeahead css --&gt;
-&lt;link rel="stylesheet" type="text/css" href="../assets/css/vendors/choices.js/public/assets/styles/choices.min.css"&gt;
+&lt;link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/choices.js/public/assets/styles/choices.min.css' %}"&gt;
 &lt;!-- Typeahead JS --&gt;
-&lt;script src="../assets/js/vendors/choices.js/public/assets/scripts/choices.js"&gt;&lt;/script&gt;
-&lt;script src="../assets/js/choices.js/typehead-custom.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{% static 'assets/js/vendors/choices.js/public/assets/scripts/choices.js' %}"&gt;&lt;/script&gt;
+&lt;script src="{% static 'assets/js/choices.js/typehead-custom.js' %}"&gt;&lt;/script&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -873,7 +873,7 @@
                 <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#wizardjs" title="Copy"><i
                     class="fa-solid fa-copy fa-fw"></i></button>
                 <pre><code class="language-html" id="wizardjs">&lt;!-- form wizard JS --&gt;
-&lt;script src="../assets/js/form-wizard/form-wizard.js"&gt;&lt;/script&gt;</code></pre>
+&lt;script src="{% static 'assets/js/form-wizard/form-wizard.js' %}"&gt;&lt;/script&gt;</code></pre>
               </div>
             </div>
           </div>
@@ -923,30 +923,30 @@
   </footer>
 </body>
 <!-- latest jquery-->
-<script src="../assets/js/document/jquery/jquery.min.js"></script>
+<script src="{% static 'assets/js/document/jquery/jquery.min.js' %}"></script>
 <!-- Bootstrap js-->
-<script src="../assets/js/document/bootstrap/popper.min.js"></script>
-<script src="../assets/js/document/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="{% static 'assets/js/document/bootstrap/popper.min.js' %}"></script>
+<script src="{% static 'assets/js/document/bootstrap/bootstrap.bundle.min.js' %}"></script>
 <!-- feather icon js-->
-<script src="../assets/js/document/feather-icon/feather.min.js"></script>
-<script src="../assets/js/document/feather-icon/feather-icon.js"></script>
+<script src="{% static 'assets/js/document/feather-icon/feather.min.js' %}"></script>
+<script src="{% static 'assets/js/document/feather-icon/feather-icon.js' %}"></script>
 <!-- popover js-->
 <!-- code copy box js-->
-<script src="../assets/js/document/prism/prism.min.js"></script>
-<script src="../assets/js/document/clipboard/clipboard.min.js"></script>
-<script src="../assets/js/document/custom-card/custom-card.js"></script>
-<script src="../assets/js/document/tooltip/tooltip-init.js"></script>
-<script src="../assets/js/document/form-validation/form-validation-custom.js"></script>
-<script src="../assets/js/document/datepicker/date-picker/datepicker.js"></script>
-<script src="../assets/js/document/datepicker/date-picker/datepicker.en.js"></script>
-<script src="../assets/js/document/datepicker/date-picker/datepicker.custom.js"></script>
-<script src="../assets/js/document/touchspin/touchspin.js"></script>
-<script src="../assets/js/document/select2/select2.full.min.js"></script>
-<script src="../assets/js/document/select2/select2-custom.js"></script>
-<script src="../assets/js/document/typeahead/choices.js"></script>
-<script src="../assets/js/document/typeahead/typehead-custom.js"></script>
-<script src="../assets/js/document/form-wizard/form-wizard.js"></script>
-<script src="../assets/js/document/main.js"></script>
-<script src="../assets/js/document/script.js"></script>
+<script src="{% static 'assets/js/document/prism/prism.min.js' %}"></script>
+<script src="{% static 'assets/js/document/clipboard/clipboard.min.js' %}"></script>
+<script src="{% static 'assets/js/document/custom-card/custom-card.js' %}"></script>
+<script src="{% static 'assets/js/document/tooltip/tooltip-init.js' %}"></script>
+<script src="{% static 'assets/js/document/form-validation/form-validation-custom.js' %}"></script>
+<script src="{% static 'assets/js/document/datepicker/date-picker/datepicker.js' %}"></script>
+<script src="{% static 'assets/js/document/datepicker/date-picker/datepicker.en.js' %}"></script>
+<script src="{% static 'assets/js/document/datepicker/date-picker/datepicker.custom.js' %}"></script>
+<script src="{% static 'assets/js/document/touchspin/touchspin.js' %}"></script>
+<script src="{% static 'assets/js/document/select2/select2.full.min.js' %}"></script>
+<script src="{% static 'assets/js/document/select2/select2-custom.js' %}"></script>
+<script src="{% static 'assets/js/document/typeahead/choices.js' %}"></script>
+<script src="{% static 'assets/js/document/typeahead/typehead-custom.js' %}"></script>
+<script src="{% static 'assets/js/document/form-wizard/form-wizard.js' %}"></script>
+<script src="{% static 'assets/js/document/main.js' %}"></script>
+<script src="{% static 'assets/js/document/script.js' %}"></script>
 
 </html>
