@@ -19,16 +19,17 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
+from .views import landing_view, profile_view, custom_logout
 
 urlpatterns = [
-    path('', TemplateView.as_view(template_name='landing-page.html'), name='landing'),
-    path('accounts/profile/', TemplateView.as_view(template_name='account/user-profile.html'), name='account_profile'),
+    path('', landing_view, name='landing'),
     path('admin/', admin.site.urls),
     path('accounts/', include('allauth.urls')),
+    path('accounts/profile/', profile_view, name='account_profile'),
+    path('accounts/logout/', custom_logout, name='account_logout'),
     path('privacy-policy/', TemplateView.as_view(template_name='others/privacy-policy.html'), name='privacy_policy'),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    # Remove accounts prefix handling as it's not needed

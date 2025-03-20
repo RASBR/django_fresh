@@ -98,14 +98,17 @@
                 >
                   {% csrf_token %}
                   <h2 class="text-center">Sign in to account</h2>
-                  <p class="text-center">
-                    Enter your email &amp; password to login
-                  </p>
+                  {% if form.errors %}
+                  <div class="alert alert-danger">
+                    Please check your credentials and try again.
+                  </div>
+                  {% endif %}
                   <div class="form-group">
                     <label class="col-form-label">Email Address</label>
                     <input
                       class="form-control"
                       type="email"
+                      name="login"
                       required=""
                       placeholder="Test@gmail.com"
                     />
@@ -116,7 +119,7 @@
                       <input
                         class="form-control"
                         type="password"
-                        name="login[password]"
+                        name="password"
                         required=""
                         placeholder="*********"
                       />
@@ -127,10 +130,11 @@
                     <div class="form-check checkbox-solid-info">
                       <input
                         class="form-check-input"
-                        id="solid6"
+                        id="remember"
+                        name="remember"
                         type="checkbox"
                       />
-                      <label class="form-check-label" for="solid6"
+                      <label class="form-check-label" for="remember"
                         >Remember password</label
                       >
                     </div>

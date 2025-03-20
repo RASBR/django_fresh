@@ -25,8 +25,21 @@ SECRET_KEY = 'django-insecure-am%fc=gwnjkcte(ql823+_o-c(1exqmtu&u(8y+m&7)3f-#5za
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '127.0.0.1']
 
+# Site framework settings
+SITE_ID = 1
+SITE_NAME = 'localhost'
+SITE_DOMAIN = '127.0.0.1:8000'  # Change this to use 127.0.0.1
+
+# Make sure USE_X_FORWARDED_HOST is True to handle proxy settings
+USE_X_FORWARDED_HOST = True
+
+# Add CSRF trusted origins
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+]
 
 # Application definition
 
@@ -143,25 +156,24 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# django-allauth settings
+# Authentication settings
 AUTHENTICATION_BACKENDS = [
     'django.contrib.auth.backends.ModelBackend',
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-SITE_ID = 1
-
-# allauth account settings
-ACCOUNT_LOGIN_METHODS = {'email'}
-ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']
+# django-allauth settings
+ACCOUNT_AUTHENTICATION_METHOD = 'email'
+ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_USERNAME_REQUIRED = False
 ACCOUNT_EMAIL_VERIFICATION = 'optional'
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
 
-# allauth routing settings
-LOGIN_REDIRECT_URL = '/'
+# URLs
 LOGIN_URL = 'account_login'
-ACCOUNT_LOGOUT_REDIRECT_URL = 'account_login'
-ACCOUNT_SIGNUP_REDIRECT_URL = '/accounts/profile/'  # Add this line
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = 'account_login'
+ACCOUNT_SIGNUP_REDIRECT_URL = '/accounts/profile/'
 
 # Email settings (for development)
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
