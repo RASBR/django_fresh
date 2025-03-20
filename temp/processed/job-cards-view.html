@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -48,6 +47,11 @@
       rel="stylesheet"
       type="text/css"
       href="../assets/css/vendors/scrollbar.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/vendors/animate.css"
     />
     <link
       rel="stylesheet"
@@ -557,7 +561,7 @@
                     <li class="d-flex">
                       <svg class="svg-color">
                         <use
-                          href="{% static 'assets/svg/iconly-sprite.svg' %}#Message"
+                          href="../assets/svg/iconly-sprite.svg#Message"
                         ></use></svg
                       ><a class="ms-2" href="letter-box.html">Inbox</a>
                     </li>
@@ -727,9 +731,7 @@
                 <i class="fa-solid fa-thumbtack"></i
                 ><a class="sidebar-link" href="letter-box.html">
                   <svg class="stroke-icon">
-                    <use
-                      href="{% static 'assets/svg/iconly-sprite.svg' %}#Message"
-                    ></use>
+                    <use href="../assets/svg/iconly-sprite.svg#Message"></use>
                   </svg>
                   <h6 class="f-w-600">Letter Box</h6></a
                 >
@@ -832,7 +834,7 @@
               </li>
               <li class="sidebar-main-title">
                 <div>
-                  <h5 class="sidebar-title pt-3 f-w-700">Components</h5>
+                  <h5 class="f-w-700 sidebar-title pt-3">Components</h5>
                 </div>
               </li>
               <li class="sidebar-list">
@@ -1139,6 +1141,11 @@
                         >
                       </li>
                       <li>
+                        <a href="login_two.html" target="_blank"
+                          >Login with image two</a
+                        >
+                      </li>
+                      <li>
                         <a href="login-bs-validation.html" target="_blank"
                           >Login With validation</a
                         >
@@ -1363,7 +1370,7 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6 col-12">
-                  <h2>Lists</h2>
+                  <h2>Card View</h2>
                 </div>
                 <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
@@ -1372,656 +1379,413 @@
                         <i class="iconly-Home icli svg-color"></i
                       ></a>
                     </li>
-                    <li class="breadcrumb-item">Ui Kits</li>
-                    <li class="breadcrumb-item active">Lists</li>
+                    <li class="breadcrumb-item">Job search</li>
+                    <li class="breadcrumb-item active">Card View</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid list-page">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-xxl-4 col-md-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Default Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use the <code>.list-group </code>define the list of items.
-                      and used <code>.list-group-item </code>to indicate the
-                      current content.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>Logo Design
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>Web Design &
-                        Development
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>E-Commerce
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>SEO
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-md-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Active Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use<code>.active</code>to a<code>.list-group-item</code>
-                      to indicate the current active.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li
-                        class="list-group-item active bg-warning-light"
-                        aria-current="true"
-                      >
-                        <i class="iconly-Arrow-Right-3 icli"> </i>UI Kits
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>Wow Animations
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>Apex Charts
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>Starter Kits
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-md-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Flush Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use<code> .list-group-flush</code> to remove some borders
-                      and rounded corners to render list group items.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>PRODUCT
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>PRODUCT
-                        DETAILS
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>CART
-                      </li>
-                      <li class="list-group-item">
-                        <i class="iconly-Arrow-Right-3 icli"> </i>CHECKOUT
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-6 col-sm-12 box-col-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Contextual classes</h3>
-                    <p class="mt-1 mb-0">
-                      Use contextual classes to style list items with a stateful
-                      background and color.<code>.list-light-*</code>
-                      and<code>text-*</code>.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <div class="list-group">
-                      <a class="list-group-item list-light-primary" href="#"
-                        >This is Primary bg you can use
-                        <em class="text-primary fw-bold"
-                          >.list-light-primary</em
-                        >
-                        class.</a
-                      ><a class="list-group-item list-light-secondary" href="#"
-                        >This is Secondary bg you can use
-                        <em class="text-secondary fw-bold"
-                          >.list-light-secondary</em
-                        >
-                        class.</a
-                      ><a class="list-group-item list-light-success" href="#"
-                        >This is Success bg you can use
-                        <em class="text-success fw-bold"
-                          >.list-light-success</em
-                        >
-                        class.</a
-                      ><a class="list-group-item list-light-danger" href="#"
-                        >This is Danger bg you can use
-                        <em class="text-danger fw-bold">.list-light-danger</em>
-                        class. </a
-                      ><a class="list-group-item list-light-warning" href="#"
-                        >This is Warning bg you can use
-                        <em class="text-warning fw-bold"
-                          >.list-light-warning</em
-                        >
-                        class.</a
-                      ><a class="list-group-item list-light-info" href="#"
-                        >This is Info bg you can use
-                        <em class="text-info fw-bold">.list-light-info </em>
-                        class.</a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-6 col-12 box-col-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Horizontal Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use<code>.list-group-horizontal</code>to change the layout
-                      of list group items from vertical to horizontal across all
-                      breakpoints.<code>.list-group-horizontal-[sm/md/lg/xl/xxl]</code>.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <div class="horizontal-list-wrapper">
-                      <ul
-                        class="fw-bold list-group list-group-horizontal-sm pb-2"
-                      >
-                        <li class="list-group-item border-left-primary">
-                          Product
-                        </li>
-                        <li class="list-group-item">Product details</li>
-                        <li class="list-group-item">Pricing</li>
-                        <li class="list-group-item">Payment details</li>
-                        <li class="list-group-item">Checkout</li>
-                        <li class="list-group-item">Mega options</li>
-                      </ul>
-                      <ul
-                        class="fw-bold list-group list-group-horizontal-md pb-2"
-                      >
-                        <li class="list-group-item border-left-secondary">
-                          Basic table
-                        </li>
-                        <li class="list-group-item">Sizing table</li>
-                        <li class="list-group-item">Border table</li>
-                        <li class="list-group-item">Basic inputs</li>
-                        <li class="list-group-item">Form validations</li>
-                      </ul>
-                      <ul
-                        class="fw-bold list-group list-group-horizontal-lg pb-2"
-                      >
-                        <li class="list-group-item border-left-warning">
-                          Flat style
-                        </li>
-                        <li class="list-group-item">Edge style</li>
-                        <li class="list-group-item">Button group</li>
-                        <li class="list-group-item">Rating</li>
-                        <li class="list-group-item">Crypto</li>
-                      </ul>
-                      <ul
-                        class="fw-bold list-group list-group-horizontal-xl pb-2"
-                      >
-                        <li class="list-group-item border-left-success">
-                          Blog
-                        </li>
-                        <li class="list-group-item">Blog details</li>
-                        <li class="list-group-item">Blog single</li>
-                        <li class="list-group-item">Order history</li>
-                      </ul>
-                      <ul class="fw-bold list-group list-group-horizontal-xxl">
-                        <li class="list-group-item border-left-info">
-                          Gallery grid
-                        </li>
-                        <li class="list-group-item">Gallery desc</li>
-                        <li class="list-group-item">Masonry Desc</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Custom Content Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use the<code>.list-group-item</code> through make custom
-                      design of all lists.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <div class="list-group main-lists-content">
-                      <a
-                        class="list-group-item list-group-item-action active bg-primary"
-                        href="#"
-                        aria-current="true"
-                      >
-                        <div
-                          class="d-flex w-100 justify-content-between align-items-center"
-                        >
-                          <div class="list-wrapper">
-                            <img
-                              class="list-img"
-                              src="../assets/images/user/1.jpg"
-                              alt="profile"
-                            />
-                            <div class="list-content">
-                              <h6>Molly Boake</h6>
-                              <p>MollyBoake@rhyta.com</p>
-                            </div>
+              <div class="col-xl-3 xl-40 box-col-12">
+                <div class="md-sidebar">
+                  <a
+                    class="btn btn-primary email-aside-toggle md-sidebar-toggle"
+                    >Job filter</a
+                  >
+                  <div class="md-sidebar-aside job-sidebar">
+                    <div
+                      class="default-according style-1 faq-accordion job-accordion"
+                    >
+                      <div class="accordion" id="accordionExample">
+                        <div class="card">
+                          <div class="card-header" id="headingOne">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block text-start"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne"
+                                aria-expanded="true"
+                                aria-controls="collapseOne"
+                              >
+                                Filter
+                              </button>
+                            </h2>
                           </div>
-                          <small>5 days ago </small>
-                        </div>
-                        <p class="mb-1">
-                          Next step is to choose a tone of voice for your
-                          content type. From casual to convincing, pick one from
-                          20+ tones in the dropdown.Why did we say “snag
-                          eyeballs” instead of “get attention?” Why do we say
-                          “brick-and-mortar words” instead of “concrete words?”
-                          Because, in your email subject lines, it’s better to
-                          use words that people can picture.
-                        </p>
-                        <small class="text-white">20K Followers</small></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
-                      >
-                        <div
-                          class="d-flex w-100 justify-content-between align-items-center"
-                        >
-                          <div class="list-wrapper">
-                            <img
-                              class="list-img"
-                              src="../assets/images/user/3.png"
-                              alt="profile"
-                            />
-                            <div class="list-content">
-                              <h6>Gabrielle Fahey</h6>
-                              <p>Gabrielle@dayrep.com</p>
-                            </div>
-                          </div>
-                          <small class="text-muted">10 days ago</small>
-                        </div>
-                        <p class="mb-1">
-                          Your aim with this blog is to advertise yourself and
-                          your services in blog design. That means it's vital to
-                          create content about just that: blog design. Anything
-                          else on your page may act as a distraction to your
-                          potential customers, and you don't want that!
-                        </p>
-                        <small class="text-muted">100 Followers</small></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
-                      >
-                        <div
-                          class="d-flex w-100 justify-content-between align-items-center"
-                        >
-                          <div class="list-wrapper">
-                            <img
-                              class="list-img"
-                              src="../assets/images/user/2.jpg"
-                              alt="profile"
-                            />
-                            <div class="list-content">
-                              <h6>Lucinda Moseley</h6>
-                              <p>LucindaMoseley@teleworm.us</p>
-                            </div>
-                          </div>
-                          <small class="text-muted">3 days ago</small>
-                        </div>
-                        <p class="mb-1">
-                          People who are looking to hire a web designer may not
-                          know what to look out for. This will give you a chance
-                          to prove your trustworthiness by providing potential
-                          customers with advice and will let you sell your
-                          services by highlighting their best qualities.
-                        </p>
-                        <small class="text-muted">23M Followers</small></a
-                      >
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-md-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Lists With Checkboxs</h3>
-                    <p class="mt-1 mb-0">
-                      Use the<code>.form-check-input </code>to check your
-                      checkbox.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-primary active"
-                          id="firstCheckbox"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label
-                          class="form-check-label text-primary mb-0"
-                          for="firstCheckbox"
-                          >Auto Start
-                        </label>
-                      </li>
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-secondary"
-                          id="secondCheckbox"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label
-                          class="form-check-label text-secondary mb-0"
-                          for="secondCheckbox"
-                          >Auto Update</label
-                        >
-                      </li>
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-info"
-                          id="thirdCheckbox"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label
-                          class="form-check- text-info mb-0"
-                          for="thirdCheckbox"
-                          >Don't check auth key</label
-                        >
-                      </li>
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-warning"
-                          id="fourCheckbox"
-                          type="checkbox"
-                          value=""
-                        />
-                        <label
-                          class="form-check-label text-warning mb-0"
-                          for="fourCheckbox"
-                          >Success all
-                        </label>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-md-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Lists With Radios</h3>
-                    <p class="mt-1 mb-0">
-                      Use the <code>.form-check-input </code>to check your radio
-                      buttons.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ul class="list-group">
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-danger"
-                          id="firstRadio"
-                          type="radio"
-                          name="listGroupRadio"
-                          value=""
-                          checked=""
-                        />
-                        <label class="form-check-label mb-0" for="firstRadio"
-                          >Meditations</label
-                        >
-                      </li>
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-primary"
-                          id="secondRadio"
-                          type="radio"
-                          name="listGroupRadio"
-                          value=""
-                        />
-                        <label class="form-check-label mb-0" for="secondRadio"
-                          >Read a book</label
-                        >
-                      </li>
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-success"
-                          id="thirdRadio"
-                          type="radio"
-                          name="list1GroupRadio"
-                          value=""
-                        />
-                        <label class="form-check-label mb-0" for="thirdRadio"
-                          >Learn to code
-                        </label>
-                      </li>
-                      <li class="list-group-item">
-                        <input
-                          class="form-check-input me-1 checkbox-info"
-                          id="fourRadio"
-                          type="radio"
-                          name="list1GroupRadio"
-                          value=""
-                        />
-                        <label class="form-check-label mb-0" for="fourRadio"
-                          >Drink more water</label
-                        >
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Lists With Numbers</h3>
-                    <p class="mt-1 mb-0">
-                      Use the <code>.list-group-numbered </code>to ordered wise
-                      print numbers.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li class="list-group-item text-primary fw-bold">
-                        known for delivery of useful and usable solutions
-                      </li>
-                      <li class="list-group-item text-danger fw-bold">
-                        Solve your problem with us
-                      </li>
-                      <li class="list-group-item text-success fw-bold">
-                        Certified Professionals
-                      </li>
-                      <li class="list-group-item text-warning fw-bold">
-                        Growth-Driven
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xl-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>JavaScript Behavior</h3>
-                    <p class="mt-1 mb-0">
-                      Use the tab JavaScript plugin—include it individually or
-                      through the compiled<code> bootstrap.js </code>file to
-                      extend our list group to create table panes of local
-                      content.
-                    </p>
-                  </div>
-                  <div class="card-body javascript-list">
-                    <div class="row">
-                      <div class="col-sm-4">
-                        <div class="list-group" id="list-tab" role="tablist">
-                          <a
-                            class="list-group-item list-group-item-action bg-primary active"
-                            id="list-home-list"
-                            data-bs-toggle="list"
-                            href="#list-home"
-                            role="tab"
-                            aria-controls="list-home"
-                            >Home</a
-                          ><a
-                            class="list-group-item list-group-item-action list-hover-primary"
-                            id="list-profile-list"
-                            data-bs-toggle="list"
-                            href="#list-profile"
-                            role="tab"
-                            aria-controls="list-profile"
-                            >Profile</a
-                          ><a
-                            class="list-group-item list-group-item-action list-hover-primary"
-                            id="list-messages-list"
-                            data-bs-toggle="list"
-                            href="#list-messages"
-                            role="tab"
-                            aria-controls="list-messages"
-                            >Contact Us</a
-                          ><a
-                            class="list-group-item list-group-item-action list-hover-primary"
-                            id="list-settings-list"
-                            data-bs-toggle="list"
-                            href="#list-settings"
-                            role="tab"
-                            aria-controls="list-settings"
-                            >Settings</a
-                          >
-                        </div>
-                      </div>
-                      <div class="col-sm-8">
-                        <div class="tab-content" id="nav-tabContent">
                           <div
-                            class="tab-pane fade show active"
-                            id="list-home"
-                            role="tabpanel"
-                            aria-labelledby="list-home-list"
+                            class="collapse show"
+                            id="collapseOne"
+                            aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample"
                           >
                             <div
-                              class="d-flex mb-xl-4 list-behavior-1 mt-sm-0 mt-3"
+                              class="card-body filter-cards-view animate-chk basic-form"
                             >
-                              <div class="flex-shrink-0">
-                                <img
-                                  class="tab-image img-fluid"
-                                  src="../assets/images/user/img.png"
-                                  alt="home"
-                                />
+                              <div class="job-filter mb-2">
+                                <div class="faq-form">
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Search.."
+                                  /><i
+                                    class="search-icon"
+                                    data-feather="search"
+                                  ></i>
+                                </div>
                               </div>
-                              <div class="flex-grow-1">
-                                <p class="mb-xl-0 mb-sm-4">
-                                  We provide end to end digital solutions, right
-                                  from designing your website/application
-                                  development: Domain, Web Hosting, Email
-                                  Hosting Registration, Search Engine
-                                  Optimization and other Internet Marketing,
-                                  Renewal of Services timely and effectively.
-                                </p>
+                              <div class="job-filter">
+                                <div class="faq-form">
+                                  <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="location.."
+                                  /><i
+                                    class="search-icon"
+                                    data-feather="map-pin"
+                                  ></i>
+                                </div>
                               </div>
-                            </div>
-                            <div class="d-xl-flex list-behavior-2">
-                              <div class="flex-grow-1">
-                                <p class="mb-0">
-                                  When someone visits your homepage, your design
-                                  should inspire them to stay. Therefore, your
-                                  value proposition should be established on the
-                                  homepage for visitors to select to stay on
-                                  your website.Building trust, expressing value,
-                                  and guiding visitors to the next step all
-                                  depend on a page's design.
-                                </p>
+                              <div class="checkbox-animated">
+                                <label class="d-block" for="chk-ani">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani"
+                                    type="checkbox"
+                                  />
+                                  Full-time (8688)
+                                </label>
+                                <label class="d-block" for="chk-ani1">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani1"
+                                    type="checkbox"
+                                  />Contract (503)
+                                </label>
+                                <label class="d-block" for="chk-ani2">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani2"
+                                    type="checkbox"
+                                  />Part-time (288)
+                                </label>
+                                <label class="d-block" for="chk-ani3">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani3"
+                                    type="checkbox"
+                                  />Internship (236)
+                                </label>
+                                <label class="d-block" for="chk-ani4">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani4"
+                                    type="checkbox"
+                                  />Temporary (146)
+                                </label>
+                                <label class="d-block" for="chk-ani5">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani5"
+                                    type="checkbox"
+                                  />Commission (25)
+                                </label>
                               </div>
-                              <div class="flex-shrink-0">
-                                <img
-                                  class="tab-image img-fluid"
-                                  src="../assets/images/user/img.png"
-                                  alt="home"
-                                />
-                              </div>
+                              <button
+                                class="btn btn-primary text-center"
+                                type="button"
+                              >
+                                Find jobs
+                              </button>
                             </div>
                           </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingTwo">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block text-start collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo"
+                                aria-expanded="true"
+                                aria-controls="collapseTwo"
+                              >
+                                Location
+                              </button>
+                            </h2>
+                          </div>
                           <div
-                            class="tab-pane fade dark-list"
-                            id="list-profile"
-                            role="tabpanel"
-                            aria-labelledby="list-profile-list"
+                            class="collapse show"
+                            id="collapseTwo"
+                            aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample"
                           >
-                            <div
-                              class="flex-space flex-wrap align-items-center list-light-dark"
+                            <div class="card-body animate-chk">
+                              <div class="location-checkbox">
+                                <label class="d-block" for="chk-ani6">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani6"
+                                    type="checkbox"
+                                  />
+                                  New York (399)
+                                </label>
+                                <label class="d-block" for="chk-ani7">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani7"
+                                    type="checkbox"
+                                  />
+                                  San Francisco (252)
+                                </label>
+                                <label class="d-block" for="chk-ani8">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani8"
+                                    type="checkbox"
+                                  />
+                                  Washington (226)
+                                </label>
+                                <label class="d-block" for="chk-ani9">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani9"
+                                    type="checkbox"
+                                  />
+                                  Seattle (242)
+                                </label>
+                                <label class="d-block" for="chk-ani10">
+                                  <input
+                                    class="checkbox_animated"
+                                    id="chk-ani10"
+                                    type="checkbox"
+                                  />
+                                  Chicago (187)
+                                </label>
+                              </div>
+                            </div>
+                            <button
+                              class="btn btn-block btn-primary text-center"
+                              type="button"
                             >
-                              <img
-                                class="tab-image"
-                                src="../assets/images/avtar/3.jpg"
-                                alt="profile"
-                              />
-                              <ul class="d-flex flex-column gap-2">
-                                <li>
-                                  <strong>Visit Us:</strong> 2600 Hollywood
-                                  Blvd,Florida, United States- 33020
-                                </li>
-                                <li>
-                                  <strong>Mail Us:</strong>contact@us@gmail.com
-                                </li>
-                                <li>
-                                  <strong>Contact Number: </strong>(954)
-                                  357-7760
-                                </li>
-                              </ul>
+                              All Locations
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingThree">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block text-start collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree"
+                                aria-expanded="true"
+                                aria-controls="collapseThree"
+                              >
+                                Job Title
+                              </button>
+                            </h2>
+                          </div>
+                          <div
+                            class="collapse show"
+                            id="collapseThree"
+                            aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample"
+                          >
+                            <div class="card-body animate-chk">
+                              <label class="d-block" for="chk-ani11">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani11"
+                                  type="checkbox"
+                                />
+                                UI/Ux designer(25)
+                              </label>
+                              <label class="d-block" for="chk-ani12">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani12"
+                                  type="checkbox"
+                                />
+                                Graphic designer(10)
+                              </label>
+                              <label class="d-block" for="chk-ani13">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani13"
+                                  type="checkbox"
+                                />
+                                Front end designer(15)
+                              </label>
+                              <label class="d-block" for="chk-ani14">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani14"
+                                  type="checkbox"
+                                />
+                                PHP developer(42)
+                              </label>
+                              <label class="d-block mb-0" for="chk-ani15">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani15"
+                                  type="checkbox"
+                                />
+                                React Developer(5)
+                              </label>
                             </div>
+                            <button
+                              class="btn btn-block btn-primary text-center"
+                              type="button"
+                            >
+                              All Job Title
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingFour">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block text-start collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour"
+                                aria-expanded="true"
+                                aria-controls="collapseFour"
+                              >
+                                Industry
+                              </button>
+                            </h2>
                           </div>
                           <div
-                            class="tab-pane fade"
-                            id="list-messages"
-                            role="tabpanel"
-                            aria-labelledby="list-messages-list"
+                            class="collapse show"
+                            id="collapseFour"
+                            aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample"
                           >
-                            <ul class="d-flex flex-column gap-1">
-                              <li>
-                                Us Technology offers web & mobile development
-                                solutions for all industry verticals.Include a
-                                short form using fields that'll help your
-                                business understand who's contacting them.
-                              </li>
-                              <li>
-                                <strong>Visit Us:</strong> 2600 Hollywood
-                                Blvd,Florida, United States- 33020
-                              </li>
-                              <li>
-                                <strong>Mail Us:</strong>contact@us@gmail.com
-                              </li>
-                              <li>
-                                <strong>Contact Number:</strong>(954) 357-7760
-                              </li>
-                            </ul>
+                            <div class="card-body animate-chk">
+                              <label class="d-block" for="chk-ani16">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani16"
+                                  type="checkbox"
+                                />
+                                Computer Software(14)
+                              </label>
+                              <label class="d-block" for="chk-ani17">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani17"
+                                  type="checkbox"
+                                />
+                                IT Engineer(10)
+                              </label>
+                              <label class="d-block" for="chk-ani18">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani18"
+                                  type="checkbox"
+                                />
+                                Service industry(20)
+                              </label>
+                              <label class="d-block" for="chk-ani19">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani19"
+                                  type="checkbox"
+                                />
+                                Accounting(34)
+                              </label>
+                              <label class="d-block mb-0" for="chk-ani20">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani20"
+                                  type="checkbox"
+                                />
+                                Financial Services(5)
+                              </label>
+                            </div>
+                            <button
+                              class="btn btn-block btn-primary text-center"
+                              type="button"
+                            >
+                              All Industries
+                            </button>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <div class="card-header" id="headingFive">
+                            <h2 class="mb-0">
+                              <button
+                                class="btn btn-link btn-block text-start collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive"
+                                aria-expanded="true"
+                                aria-controls="collapseFive"
+                              >
+                                Specific skills
+                              </button>
+                            </h2>
                           </div>
                           <div
-                            class="tab-pane fade"
-                            id="list-settings"
-                            role="tabpanel"
-                            aria-labelledby="list-settings-list"
+                            class="collapse show"
+                            id="collapseFive"
+                            aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample"
                           >
-                            <ul class="d-flex flex-column gap-2">
-                              <li>
-                                <strong>Available pages in Theme:</strong>
-                              </li>
-                              <li>
-                                --> Typography: Typography is the art of
-                                arranging letters and text in a way that makes
-                                the copy legible, clear, and visually appealing
-                                to the reader.
-                              </li>
-                              <li>
-                                --> Tooltip: A tooltip is a brief, informative
-                                message that appears when a user interacts with
-                                an element in a graphical user interface (GUI).
-                              </li>
-                            </ul>
+                            <div class="card-body animate-chk">
+                              <label class="d-block" for="chk-ani21">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani21"
+                                  type="checkbox"
+                                />
+                                HTML,scss & sass
+                              </label>
+                              <label class="d-block" for="chk-ani22">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani22"
+                                  type="checkbox"
+                                />
+                                Javascript
+                              </label>
+                              <label class="d-block" for="chk-ani23">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani23"
+                                  type="checkbox"
+                                />
+                                Node.js
+                              </label>
+                              <label class="d-block" for="chk-ani24">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani24"
+                                  type="checkbox"
+                                />
+                                Gulp & Pug
+                              </label>
+                              <label class="d-block mb-0" for="chk-ani25">
+                                <input
+                                  class="checkbox_animated"
+                                  id="chk-ani25"
+                                  type="checkbox"
+                                />
+                                Angular.js
+                              </label>
+                            </div>
+                            <button
+                              class="btn btn-block btn-primary text-center"
+                              type="button"
+                            >
+                              All Skills
+                            </button>
                           </div>
                         </div>
                       </div>
@@ -2029,214 +1793,803 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xxl-4 col-md-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Numbered & Badge Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use the<code> .list-group-numbered</code> modifier class
-                      to numbered list group items.Numbers are generated via CSS
-                      for better placement inside list group items.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <ol class="list-group list-group-numbered">
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start flex-wrap"
-                      >
-                        <div>Stella Nowland</div>
-                        <span class="badge bg-warning rounded-pill p-2"
-                          >Freelance</span
-                        >
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start flex-wrap"
-                      >
-                        <div>Lola Stanford</div>
-                        <span
-                          class="badge bg-danger text-white rounded-pill p-2"
-                          >Issue</span
-                        >
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start flex-wrap"
-                      >
-                        <div>Caitlin Coungeau</div>
-                        <span
-                          class="badge bg-primary text-white rounded-pill p-2"
-                          >Social</span
-                        >
-                      </li>
-                      <li
-                        class="list-group-item d-flex justify-content-between align-items-start flex-wrap"
-                      >
-                        <div>Graciela W. McClaran</div>
-                        <span
-                          class="badge bg-danger text-white rounded-pill p-2"
-                          >Issue</span
-                        >
-                      </li>
-                    </ol>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xxl-4 col-md-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Disabled Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use<code> .disabled </code>to a
-                      <code>.list-group-item</code> to make it appear disabled.
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <div class="list-group">
-                      <a
-                        class="list-group-item list-group-item-action list-hover-primary active"
-                        href="javascript:void(0)"
-                        ><img
-                          class="rounded-circle"
-                          src="../assets/images/user/1.jpg"
-                          alt="user"
-                        />Teresa J. Mosteller</a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="javascript:void(0)"
-                        ><img
-                          class="rounded-circle"
-                          src="../assets/images/user/3.png"
-                          alt="user"
-                        />Gloria D. Acheson</a
-                      ><a
-                        class="list-group-item list-group-item-action disabled"
-                        href="javascript:void(0)"
-                        ><img
-                          class="rounded-circle"
-                          src="../assets/images/user/2.jpg"
-                          alt="user"
-                        />Sharon C. Obrien</a
-                      ><a
-                        class="list-group-item list-group-item-action disabled"
-                        href="javascript:void(0)"
-                        ><img
-                          class="rounded-circle"
-                          src="../assets/images/user/5.jpg"
-                          alt="user"
-                        />Bryan A. Owens</a
-                      >
+              <div class="col-xl-9 xl-60 box-col-12">
+                <div class="row">
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/1.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >UI/UX IT Frontend Developer</a
+                                ><span class="badge badge-primary pull-right"
+                                  >New</span
+                                >
+                              </h5>
+                              <p>
+                                (L6) Salt Lake City, UT<span
+                                  ><i class="fa-solid fa-star font-secondary">
+                                  </i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            We are looking for an experienced and Admiro
+                            designer and/or frontend engineer with expertise in
+                            accessibility to join our team , 3+ years of
+                            experience working in as a Frontend Engineer or
+                            comparable role.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="col-xxl-4">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Scrollable Lists</h3>
-                    <p class="mt-1 mb-0">
-                      Use the property<code>overflow:auto </code>through
-                      scrollable lists.
-                    </p>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/2.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >React/React Native Developer</a
+                                ><span class="badge badge-primary pull-right"
+                                  >New</span
+                                >
+                              </h5>
+                              <p>
+                                San<span>Diego, CA</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            Ideally 2+ years experience with React. Bonus points
+                            if you have React Native experience. This is an
+                            incredibly exciting opportunity to gain commercia.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <div class="list-group scrollbar-wrapper">
-                      <a
-                        class="list-group-item list-group-item-action active list-hover-primary"
-                        href="#"
-                        aria-current="true"
+                  <div class="col-xl-6 xl-100">
+                    <div class="card ribbon-vertical-left-wrapper">
+                      <div
+                        class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary"
                       >
-                        <div class="list-wrapper gap-0 pb-0">
-                          <img
-                            class="list-img"
-                            src="../assets/images/user/9.jpg"
-                            alt="profile"
-                          />
-                          <div class="list-content">
-                            <h6>Molly Boake</h6>
-                            <p>MollyBoake@rhyta.com</p>
-                            <small>5 days ago</small>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/3.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Senior UX designer</a
+                                ><span class="pull-right">2 days ago</span>
+                              </h5>
+                              <p>
+                                Minneapolis, MN<span>
+                                  <i class="fa-solid fa-star font-secondary"></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i class="fa-solid fa-star font-secondary">
+                                  </i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
                           </div>
-                        </div></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
-                      >
-                        <div class="list-wrapper gap-0 pb-0">
-                          <img
-                            class="list-img"
-                            src="../assets/images/user/10.jpg"
-                            alt="profile"
-                          />
-                          <div class="list-content">
-                            <h6>Gabrielle Fahey</h6>
-                            <p>GabrielleFahey@dayrep.com</p>
-                            <small class="text-muted">10 days ago</small>
+                          <p>
+                            The designer will apply Lean UX and Design Thinking
+                            practices in a highly collaborative, fast-paced,
+                            distributed environment You have 4+ years of UX
+                            experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/4.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Front end web developer</a
+                                ><span class="pull-right">3 days ago</span>
+                              </h5>
+                              <p>
+                                Cisco<span>Lelystad, Netherlands</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
                           </div>
-                        </div></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
-                      >
-                        <div class="list-wrapper gap-0 pb-0">
-                          <img
-                            class="list-img"
-                            src="../assets/images/user/2.jpg"
-                            alt="profile"
-                          />
-                          <div class="list-content">
-                            <h6>Lucinda Moseley</h6>
-                            <p>LucindaMoseley@teleworm.us</p>
-                            <small class="text-muted">3 days ago</small>
+                          <p>
+                            Insipidity the sufficient discretion imprudence
+                            resolution sir him decisively. Proceed how any
+                            engaged visitor. Explained propriety off out
+                            perpetual his you. Feel sold off felt nay rose met
+                            you.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/5.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Graphic designer</a
+                                ><span class="pull-right">3 days ago</span>
+                              </h5>
+                              <p>
+                                Infosys<span>Lelystad, Netherlands</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i class="fa-solid fa-star font-secondary">
+                                  </i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
                           </div>
-                        </div></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
-                      >
-                        <div class="list-wrapper gap-0 pb-0">
-                          <img
-                            class="list-img"
-                            src="../assets/images/user/12.png"
-                            alt="profile"
-                          />
-                          <div class="list-content">
-                            <h6>Francis K. Henriques</h6>
-                            <p>FrancisKHenriques@teleworm.us</p>
-                            <small class="text-muted">2 days ago</small>
+                          <p>
+                            Contented get distrusts certainty nay are frankness
+                            concealed ham. On unaffected resolution on
+                            considered of. No thought me husband or colonel
+                            forming effects. End sitting shewing who saw besides
+                            son musical adapted.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/6.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Designer, CRM</a
+                                ><span class="pull-right">3 days ago</span>
+                              </h5>
+                              <p>
+                                Citrix<span>Lelystad, Netherlands</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
                           </div>
-                        </div></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
+                          <p>
+                            Situation admitting promotion at or to perceived be.
+                            Mr acuteness we as estimable enjoyment up. An held
+                            late as felt know. Learn do allow solid to grave.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card ribbon-vertical-left-wrapper">
+                      <div
+                        class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary"
                       >
-                        <div class="list-wrapper gap-0 pb-0">
-                          <img
-                            class="list-img"
-                            src="../assets/images/user/14.png"
-                            alt="profile"
-                          />
-                          <div class="list-content">
-                            <h6>Jose A. Seay</h6>
-                            <p>JoseASeay@rhyta.com</p>
-                            <small class="text-muted">15 days ago</small>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/2.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >React/React Native Developer</a
+                                ><span class="pull-right">5 days ago</span>
+                              </h5>
+                              <p>
+                                San<span>Diego, CA</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
                           </div>
-                        </div></a
-                      ><a
-                        class="list-group-item list-group-item-action list-hover-primary"
-                        href="#"
+                          <p>
+                            Situation admitting promotion at or to perceived be.
+                            Mr acuteness we as estimable enjoyment up. An held
+                            late as felt know. Learn do allow solid to grave.
+                            Middleton suspicion age her attention.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card ribbon-vertical-left-wrapper">
+                      <div
+                        class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary"
                       >
-                        <div class="list-wrapper gap-0 pb-0">
-                          <img
-                            class="list-img"
-                            src="../assets/images/user/3.jpg"
-                            alt="profile"
-                          />
-                          <div class="list-content">
-                            <h6>Phil F. Cunningham</h6>
-                            <p>PhilFCunningham@dayrep.com</p>
-                            <small class="text-muted">6 days ago </small>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/2.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >React/React Native Developer</a
+                                ><span class="pull-right">5 days ago</span>
+                              </h5>
+                              <p>
+                                San<span>Diego, CA</span
+                                ><span>
+                                  <i class="fa-solid fa-star font-secondary"></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
                           </div>
-                        </div></a
+                          <p>
+                            Ideally 2+ years experience with React. Bonus points
+                            if you have React Native experience. This is an
+                            incredibly exciting opportunity to gain commercial.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/3.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Senior UX designer</a
+                                ><span class="pull-right">5 days ago</span>
+                              </h5>
+                              <p>
+                                Minneapolis, MN<span>
+                                  <i class="fa-solid fa-star font-secondary"></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            The designer will apply Lean UX and Design Thinking
+                            practices in a highly collaborative, fast-paced,
+                            distributed environment You have 4+ years of UX
+                            experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/3.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Senior UX designer</a
+                                ><span class="pull-right">5 days ago</span>
+                              </h5>
+                              <p>
+                                Minneapolis, MN<span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            The designer will apply Lean UX and Design Thinking
+                            practices in a highly collaborative, fast-paced,
+                            distributed environment You have 4+ years of UX
+                            experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/5.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Graphic designer</a
+                                ><span class="pull-right">3 days ago</span>
+                              </h5>
+                              <p>
+                                Infosys<span>Lelystad, Netherlands</span
+                                ><span>
+                                  <i class="fa-solid fa-star font-secondary"></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i class="fa-solid fa-star font-secondary">
+                                  </i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            Contented get distrusts certainty nay are frankness
+                            concealed ham. On unaffected resolution on
+                            considered of. No thought me husband or colonel
+                            forming effects.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/6.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Designer, CRM</a
+                                ><span class="pull-right">3 days ago</span>
+                              </h5>
+                              <p>
+                                Citrix<span>Lelystad, Netherlands</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            Situation admitting promotion at or to perceived be.
+                            Mr acuteness we as estimable enjoyment up. An held
+                            late as felt know. Learn do allow solid to grave.
+                            Middleton suspicion age her attention.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/1.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >UI/UX IT Frontend Developer</a
+                                ><span class="badge badge-primary pull-right"
+                                  >New</span
+                                >
+                              </h5>
+                              <p>
+                                (L6) Salt Lake City, UT<span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            We are looking for an experienced and Admiro
+                            designer and/or frontend engineer with expertise in
+                            accessibility to join our team .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/2.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >React/React Native Developer</a
+                                ><span class="badge badge-primary pull-right"
+                                  >New</span
+                                >
+                              </h5>
+                              <p>
+                                San<span>Diego, CA</span
+                                ><span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            Ideally 2+ years experience with React. Bonus points
+                            if you have React Native experience. This is an
+                            incredibly exciting opportunity to gain commercial.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card">
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/4.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Front end web developer</a
+                                ><span class="pull-right">3 days ago</span>
+                              </h5>
+                              <p>
+                                Cisco <span>Lelystad, Netherlands </span
+                                ><span>
+                                  <i class="fa-solid fa-star font-secondary"></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            Insipidity the sufficient discretion imprudence
+                            resolution sir him decisively. Proceed how any
+                            engaged visitor. Explained propriety off out
+                            perpetual his you.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-6 xl-100">
+                    <div class="card ribbon-vertical-left-wrapper">
+                      <div
+                        class="ribbon ribbon-bookmark ribbon-vertical-left ribbon-secondary"
                       >
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                      <div class="job-search">
+                        <div class="card-body">
+                          <div class="d-flex">
+                            <img
+                              class="img-40 img-fluid m-r-20"
+                              src="../assets/images/job-search/3.jpg"
+                              alt=""
+                            />
+                            <div class="flex-grow-1 w-100">
+                              <h5 class="f-w-700">
+                                <a class="text-primary" href="#"
+                                  >Senior UX designer</a
+                                ><span class="pull-right">2 days ago</span>
+                              </h5>
+                              <p>
+                                Minneapolis, MN<span
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                  ><i
+                                    class="fa-solid fa-star font-secondary"
+                                  ></i
+                                ></span>
+                              </p>
+                            </div>
+                          </div>
+                          <p>
+                            The designer will apply Lean UX and Design Thinking
+                            practices in a highly collaborative, fast-paced,
+                            distributed environment You have 4+ years of UX
+                            experience.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="job-pagination">
+                      <nav aria-label="Page navigation example">
+                        <ul class="pagination pagination-primary">
+                          <li class="page-item disabled">
+                            <a class="page-link" href="#">Previous</a>
+                          </li>
+                          <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                          </li>
+                          <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
                   </div>
                 </div>
@@ -2276,6 +2629,9 @@
     ></script>
     <!--fontawesome-->
     <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
+    <!-- feather-->
+    <script src="../assets/js/vendors/feather-icon/feather.min.js"></script>
+    <script src="../assets/js/vendors/feather-icon/custom-script.js"></script>
     <!-- sidebar -->
     <script src="../assets/js/sidebar.js"></script>
     <!-- scrollbar-->
