@@ -1,7 +1,7 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {% load static %}
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +16,14 @@
     <meta name="author" content="pixelstrap" />
     <title>Admiro - Premium Admin Template</title>
     <!-- Favicon icon-->
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="{% static 'assets/images/favicon.png' %}"
+      type="image/x-icon"
+    />
     <link
       rel="shortcut icon"
-      href="../assets/images/favicon.png"
+      href="{% static 'assets/images/favicon.png' %}"
       type="image/x-icon"
     />
     <!-- Google font-->
@@ -30,26 +34,32 @@
       rel="stylesheet"
     />
     <!-- Flag icon css -->
-    <link rel="stylesheet" href="../assets/css/vendors/flag-icon.css" />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/vendors/flag-icon.css' %}"
+    />
     <!-- iconly-icon-->
-    <link rel="stylesheet" href="../assets/css/iconly-icon.css" />
-    <link rel="stylesheet" href="../assets/css/bulk-style.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/iconly-icon.css' %}" />
+    <link rel="stylesheet" href="{% static 'assets/css/bulk-style.css' %}" />
     <!-- iconly-icon-->
-    <link rel="stylesheet" href="../assets/css/themify.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/themify.css' %}" />
     <!--fontawesome-->
-    <link rel="stylesheet" href="../assets/css/fontawesome-min.css" />
+    <link
+      rel="stylesheet"
+      href="{% static 'assets/css/fontawesome-min.css' %}"
+    />
     <!-- Whether Icon css-->
     <link
       rel="stylesheet"
       type="text/css"
-      href="../assets/css/vendors/weather-icons/weather-icons.min.css"
+      href="{% static 'assets/css/vendors/weather-icons/weather-icons.min.css' %}"
     />
     <!-- App css -->
-    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}" />
     <link
       id="color"
       rel="stylesheet"
-      href="../assets/css/color-1.css"
+      href="{% static 'assets/css/color-1.css' %}"
       media="screen"
     />
   </head>
@@ -66,24 +76,18 @@
     <!-- login page start-->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-xl-7 login_one_image">
-          <img
-            class="bg-img-cover bg-center"
-            src="../assets/images/login/2.jpg"
-            alt="looginpage"
-          />
-        </div>
-        <div class="col-xl-5 p-0">
+        <div class="col-xl-5 login_two_image"></div>
+        <div class="col-xl-7 p-0">
           <div class="login-card login-dark login-bg">
             <div>
               <div>
                 <a class="logo" href="index.html"
                   ><img
                     class="img-fluid for-light m-auto"
-                    src="../assets/images/logo/logo1.png"
+                    src="{% static 'assets/images/logo/logo1.png' %}"
                     alt="looginpage" /><img
                     class="for-dark"
-                    src="../assets/images/logo/logo-dark.png"
+                    src="{% static 'assets/images/logo/logo-dark.png' %}"
                     alt="logo"
                 /></a>
               </div>
@@ -127,8 +131,8 @@
                       >
                     </div>
                     <a class="link" href="forget-password.html"
-                      >Forgot password?</a
-                    >
+                      >Forgot password?
+                    </a>
                     <div class="text-end mt-3">
                       <button
                         class="btn btn-primary btn-block w-100"
@@ -177,22 +181,22 @@
         </div>
       </div>
       <!-- jquery-->
-      <script src="../assets/js/vendors/jquery/jquery.min.js"></script>
+      <script src="{% static 'assets/js/vendors/jquery/jquery.min.js' %}"></script>
       <!-- bootstrap js-->
       <script
-        src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js"
+        src="{% static 'assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js' %}"
         defer=""
       ></script>
       <script
-        src="../assets/js/vendors/bootstrap/dist/js/popper.min.js"
+        src="{% static 'assets/js/vendors/bootstrap/dist/js/popper.min.js' %}"
         defer=""
       ></script>
       <!--fontawesome-->
-      <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
+      <script src="{% static 'assets/js/vendors/font-awesome/fontawesome-min.js' %}"></script>
       <!-- password_show-->
-      <script src="../assets/js/password.js"></script>
+      <script src="{% static 'assets/js/password.js' %}"></script>
       <!-- custom script -->
-      <script src="../assets/js/script.js"></script>
+      <script src="{% static 'assets/js/script.js' %}"></script>
     </div>
   </body>
 </html>
