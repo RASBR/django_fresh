@@ -28,7 +28,7 @@
     <!-- Whether Icon css-->
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/weather-icons/weather-icons.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/scrollbar.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/tree.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/prism.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/slick.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/slick-theme.css' %}">
     <!-- App css -->
@@ -303,7 +303,7 @@
         </div>
       </header>
       <!-- Page Body Start-->
-      <div class="page-body-wrapper"> 
+      <div class="page-body-wrapper">
         <!-- Page sidebar start-->
         <aside class="page-sidebar"> 
           <div class="left-arrow" id="left-arrow"><i data-feather="arrow-left"></i></div>
@@ -366,6 +366,7 @@
                   <li> <a href="projectcreate.html">Project create </a></li>
                 </ul>
               </li>
+              <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="file-manager.html">
                   <svg class="stroke-icon">
                     <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Paper"></use>
                   </svg>
@@ -432,37 +433,37 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="bookmark.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Bookmark"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Bookmark"></use>
                   </svg>
                   <h6 class="f-w-600">Bookmarks</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="contacts.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Contacts"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Contacts"></use>
                   </svg>
                   <h6 class="f-w-600">Contacts   </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="task.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Tick-square"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Tick-square"></use>
                   </svg>
                   <h6 class="f-w-600">Tasks</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="calendar-basic.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Calendar"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Calendar"></use>
                   </svg>
                   <h6 class="f-w-600">Calendar  </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="social-app.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Camera"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Camera"></use>
                   </svg>
                   <h6 class="f-w-600">Social App</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="to-do.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Edit"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Edit"></use>
                   </svg>
                   <h6 class="f-w-600">To-Do </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="search.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Search-sidebar"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Search-sidebar"></use>
                   </svg>
                   <h6 class="f-w-600">Search Result                                                </h6></a></li>
               <li class="sidebar-main-title">
@@ -472,12 +473,12 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="buttons.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#More-box"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#More-box"></use>
                   </svg>
                   <h6 class="f-w-600">buttons </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Folder"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Folder"></use>
                   </svg>
                   <h6 class="f-w-600">Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -499,7 +500,7 @@
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Ticket-star"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Ticket-star"></use>
                   </svg>
                   <h6 class="f-w-600">Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
@@ -525,7 +526,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Category"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Category"></use>
                   </svg>
                   <h6 class="f-w-600">Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
@@ -535,7 +536,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Activity"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Activity"></use>
                   </svg>
                   <h6 class="f-w-600">Icon</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
@@ -547,7 +548,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Chart"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Chart"></use>
                   </svg>
                   <h6 class="f-w-600">Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -570,7 +571,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Filter"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Filter"></use>
                   </svg>
                   <h6 class="f-w-600">Forms</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -605,7 +606,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Edit-line"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Edit-line"></use>
                   </svg>
                   <h6 class="f-w-600">Tables</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -634,27 +635,27 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="landing-page.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Wallet"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Wallet"></use>
                   </svg>
                   <h6 class="f-w-600">Landing page</h6></a></li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="sample-page.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Paper-plus"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Paper-plus"></use>
                   </svg>
                   <h6 class="f-w-600">Sample page</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="internationalization.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Play"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Play"></use>
                   </svg>
                   <h6 class="f-w-600">Internationalization</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="../starter-kit/index.html" target="_blank">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Star-kit"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Star-kit"></use>
                   </svg>
                   <h6 class="f-w-600">Starter kit</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Password"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Password"></use>
                   </svg>
                   <h6 class="f-w-600">Others</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -712,7 +713,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Gallery"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Gallery"></use>
                   </svg>
                   <h6 class="f-w-600">Gallery  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -725,7 +726,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Game"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Game"></use>
                   </svg>
                   <h6 class="f-w-600">Blog  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -736,12 +737,12 @@
               </li>
               <li class="sidebar-list"><a class="sidebar-link" href="faq.html"> 
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Danger"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Danger"></use>
                   </svg>
                   <h6 class="f-w-600">FAQ</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Filter-2"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Filter-2"></use>
                   </svg>
                   <h6 class="f-w-600">Job Search  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -753,7 +754,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Work"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Work"></use>
                   </svg>
                   <h6 class="f-w-600">Learning</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -763,7 +764,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Discovery"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Discovery"></use>
                   </svg>
                   <h6 class="f-w-600">Maps</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -773,7 +774,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Shield"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Shield"></use>
                   </svg>
                   <h6 class="f-w-600">Editors</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -783,12 +784,12 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="knowledgebase.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Setting"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Setting"></use>
                   </svg>
                   <h6 class="f-w-600">Knowledgebase</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="support-ticket.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Ticket"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Ticket"></use>
                   </svg>
                   <h6 class="f-w-600">Support Ticket</h6></a></li>
             </ul>
@@ -801,85 +802,164 @@
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6 col-12">
-                  <h2>Tree View   </h2>
+                  <h2>Popover</h2>
                 </div>
                 <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli svg-color"></i></a></li>
-                    <li class="breadcrumb-item">Bonus Ui</li>
-                    <li class="breadcrumb-item active">Tree View     </li>
+                    <li class="breadcrumb-item"><a href="index.html"> <i class="iconly-Home icli svg-color"></i></a></li>
+                    <li class="breadcrumb-item">Ui Kits</li>
+                    <li class="breadcrumb-item active">Popover</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Container-fluid starts  -->
+          <!-- Container-fluid starts-->
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-sm-6">
+            <div class="row popover-main">
+              <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header card-no-border pb-0">
-                    <h3>Basic Tree</h3>
-                    <p class="mt-1 mb-0">
-                       Use the dynamic tree view with checkboxes.  </p>
+                    <h3>Basic Popover </h3>
+                    <p class="mt-1 mb-0">To set popover use the<code> data-bs-toggle='popover'.</code></p>
+                    <div class="card-header-right">
+                      <ul class="list-unstyled card-option">
+                        <li><i class="fa-solid fa-ellipsis"></i></li>
+                        <li><i class="fa-solid fa-code view-html"></i></li>
+                        <li><i class="fa-solid fa-maximize full-card"></i></li>
+                        <li><i class="fa-solid fa-minus minimize-card"></i></li>
+                        <li><i class="fa-solid fa-rotate-right reload-card"></i></li>
+                        <li><i class="fa-solid fa-xmark close-card"></i></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <div class="tree-container"></div>
+                  <div class="card-body common-flex">
+                    <button class="btn btn-primary example-popover mb-0 me-0" type="button" data-bs-toggle="popover" title="Basic Popover" data-bs-content="If the package restore doesn't help, you can look at the Output window in the Visual Studio.">Hurry Up! </button>
+                    <button class="example-popover btn btn-success mb-0 me-0" type="button" data-bs-trigger="hover" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Hover Popover" data-offset="-20px -20px" data-bs-content=" Several utility instruction sets have been featured in the Bootstrap 4 to promote very easy learning for beginners in the business of web building.">Hover tooltip</button><a class="btn btn-lg btn-secondary" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-title="Dismissible popover" data-bs-content="You are able to even develop and suggest improvements to the Bootstrap 4 before its final version is delivered.">Dismissible popover</a>
+                    <div class="code-box-copy">
+                      <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#example-head" title="Copy"><i class="fa-regular fa-copy"></i></button>
+                      <pre><code class="language-html" id="example-head">&lt;button class="btn btn-primary example-popover mb-0 me-0" type="button" data-bs-toggle="popover" title="Basic Popover" data-bs-content="If the package restore doesn't help, you can look at the Output window in the Visual Studio."&gt;Hurry Up!
+&lt;/button&gt;
+&lt;button class="example-popover btn btn-success mb-0 me-0" type="button" data-bs-trigger="hover" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Hover Popover" data-offset="-20px -20px" data-bs-content=" Several utility instruction sets have been featured in the&nbsp; &nbsp; Bootstrap 4 to promote very easy learning for beginners in the business of web building."&gt;Hover tooltip
+&lt;/button&gt;
+&lt;a class="btn btn-lg btn-secondary" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" title="Dismissible popover" data-bs-title="Dismissible popover" data-bs-content="You are able to even develop and suggest improvements to the Bootstrap 4 before its final version is delivered."&gt;
+Dismissible popover
+&lt;/a&gt;</code></pre>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-sm-12">
                 <div class="card">
                   <div class="card-header card-no-border pb-0">
-                    <h3>Disabled Tree</h3>
-                    <p class="mt-1 mb-0">
-                       Use the dynamic tree view with checkboxes.</p>
+                    <h3>Popover Direction</h3>
+                    <p class="mt-1 mb-0">To set the position of popover use the    <code> data-bs-placement='top/bottom/...'.</code></p>
+                    <div class="card-header-right">
+                      <ul class="list-unstyled card-option">
+                        <li><i class="fa-solid fa-ellipsis"></i></li>
+                        <li><i class="fa-solid fa-code view-html"></i></li>
+                        <li><i class="fa-solid fa-maximize full-card"></i></li>
+                        <li><i class="fa-solid fa-minus minimize-card"></i></li>
+                        <li><i class="fa-solid fa-rotate-right reload-card"></i></li>
+                        <li><i class="fa-solid fa-xmark close-card"></i></li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="card-body">
-                    <div class="disabled-container"> </div>
+                  <div class="card-body common-flex">
+                    <button class="example-popover btn btn-warning mb-0 me-0 text-light" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="top" title="Popover On Top" data-bs-content="Popovers need the tooltip plugin considering that a dependency.">Popover on top</button>
+                    <button class="example-popover btn btn-danger mb-0 me-0" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Popover On Right" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself.">Popover on right</button>
+                    <button class="example-popover btn btn-info mb-0 me-0 text-light" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover On Bottom" data-bs-content="Identify container:to evade rendering problems in more complex components (like Bootstrap input groups, button groups, etc).">Popover on bottom</button>
+                    <button class="example-popover btn btn-dark mb-0 me-0" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself.">
+                       Popover on left</button>
+                    <div class="code-box-copy">
+                      <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#example-head" title="Copy"><i class="fa-regular fa-copy"></i></button>
+                      <pre><code class="language-html" id="example-head">&lt;div class="card-body common-flex"&gt;
+&lt;button class="example-popover btn btn-warning mb-0 me-0 text-light" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="top" title="Popover On Top" data-bs-content="Popovers need the tooltip plugin considering that a dependency."&gt;Popover on top&lt;/button&gt;
+&lt;button class="example-popover btn btn-danger mb-0 me-0" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="right" title="Popover On Right" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself."&gt;Popover on right&lt;/button&gt;
+&lt;button class="example-popover btn btn-info mb-0 me-0 text-light" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="bottom" title="Popover On Bottom" data-bs-content="Identify container:to evade rendering problems in more complex components (like Bootstrap input groups, button groups, etc)."&gt;Popover on bottom&lt;/button&gt;
+&lt;button class="example-popover btn btn-dark mb-0 me-0" type="button" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself."&gt;
+Popover on left&lt;/button&gt;
+&lt;/div&gt;</div></code></pre>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12">                      
+                <div class="card">
+                  <div class="card-header card-no-border pb-0">
+                    <h3>Popover Offset </h3>
+                    <p class="mt-1 mb-0">
+                       To add the offset for popover using <code> data-bs-offset="*".</code></p>
+                    <div class="card-header-right">
+                      <ul class="list-unstyled card-option">
+                        <li><i class="fa-solid fa-ellipsis"></i></li>
+                        <li><i class="fa-solid fa-code view-html"></i></li>
+                        <li><i class="fa-solid fa-maximize full-card"></i></li>
+                        <li><i class="fa-solid fa-minus minimize-card"></i></li>
+                        <li><i class="fa-solid fa-rotate-right reload-card"></i></li>
+                        <li><i class="fa-solid fa-xmark close-card"></i></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="card-body common-flex">
+                    <button class="btn btn-secondary mb-0 me-0" type="button" data-bs-offset="50,0" data-bs-toggle="popover" data-bs-delay-show="5000" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-kt-initialized="1">Popover offset 50  </button>
+                    <button class="example-popover btn btn-dark mb-0 me-0" type="button" data-bs-offset="-50,0" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself.">Popover offset -50   </button>
+                    <div class="code-box-copy">
+                      <button class="code-box-copy__btn btn-clipboard" data-clipboard-target="#example-head" title="Copy"><i class="fa-regular fa-copy"></i></button>
+                      <pre><code class="language-html" id="example-head">&lt;div class="card-body common-flex"&gt;
+&lt;button class="btn btn-secondary mb-0 me-0" type="button" data-bs-offset="50,0" data-bs-toggle="popover" data-bs-delay-show="5000" title="Popover title" data-bs-content="And here's some amazing content. It's very engaging. Right?" data-kt-initialized="1"&gt;Popover offset 50 &lt;/button&gt;
+&lt;button class="example-popover btn btn-dark mb-0 me-0" type="button" data-bs-offset="-50,0" data-container="body" data-bs-toggle="popover" data-bs-placement="left" title="Popover On Left" data-bs-content="Popovers are opt-in for effectiveness causes, in this way you have to initialize them yourself."&gt;Popover offset -50 &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <footer class="footer"> 
+            <div class="container-fluid">
+              <div class="row"> 
+                <div class="col-md-6 footer-copyright">
+                  <p class="mb-0">Copyright 2024 © Admiro theme by pixelstrap.</p>
+                </div>
+                <div class="col-md-6">
+                  <p class="float-end mb-0">Hand crafted &amp; made with
+                    <svg class="svg-color footer-icon">
+                      <use href="{% static 'assets/svg/iconly-sprite.svg' %}#heart"></use>
+                    </svg>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
-        <footer class="footer"> 
-          <div class="container-fluid">
-            <div class="row"> 
-              <div class="col-md-6 footer-copyright">
-                <p class="mb-0">Copyright 2024 © Admiro theme by pixelstrap.</p>
-              </div>
-              <div class="col-md-6">
-                <p class="float-end mb-0">Hand crafted &amp; made with
-                  <svg class="svg-color footer-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
-                  </svg>
-                </p>
-              </div>
-            </div>
-          </div>
-        </footer>
       </div>
     </div>
     <!-- jquery-->
     <script src="{% static 'assets/js/vendors/jquery/jquery.min.js' %}"></script>
     <!-- bootstrap js-->
     <script src="{% static 'assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js' %}" defer=""></script>
+    <script src="{% static 'assets/js/vendors/bootstrap/dist/js/popper.min.js' %}" defer=""></script>
+    <!--fontawesome-->
     <script src="{% static 'assets/js/vendors/font-awesome/fontawesome-min.js' %}"></script>
     <!-- sidebar -->
     <script src="{% static 'assets/js/sidebar.js' %}"></script>
+    <!-- popover -->
+    <script src="{% static 'assets/js/popover.js' %}"></script>
     <!-- scrollbar-->
     <script src="{% static 'assets/js/scrollbar/simplebar.js' %}"></script>
     <script src="{% static 'assets/js/scrollbar/custom.js' %}"></script>
     <!-- slick-->
     <script src="{% static 'assets/js/slick/slick.min.js' %}"></script>
     <script src="{% static 'assets/js/slick/slick.js' %}"></script>
-    <!-- Tree js-->
-    <script src="{% static 'assets/js/tree/tree.js' %}"></script>
-    <script src="{% static 'assets/js/tree/tree.min.js' %}"></script>
-    <script src="{% static 'assets/js/tree/tree-custom.js' %}"></script>
     <!-- theme_customizer-->
     <script src="{% static 'assets/js/theme-customizer/customizer.js' %}"></script>
+    <!-- prism-->
+    <script src="{% static 'assets/js/prism/prism.min.js' %}"></script>
+    <!-- clipboard-->
+    <script src="{% static 'assets/js/clipboard/clipboard.min.js' %}"></script>
+    <!-- customcard-->
+    <script src="{% static 'assets/js/custom-card/custom-card.js' %}"></script>
     <!-- custom script -->
     <script src="{% static 'assets/js/script.js' %}"></script>
   </body>
