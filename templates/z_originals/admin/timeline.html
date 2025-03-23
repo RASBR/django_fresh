@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,31 +10,33 @@
     <meta name="author" content="pixelstrap">
     <title>Admiro - Premium Admin Template</title>
     <!-- Favicon icon-->
-    <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
+    <link rel="shortcut icon" href="{% static 'assets/images/favicon.png' %}" type="image/x-icon">
     <!-- Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200;6..12,300;6..12,400;6..12,500;6..12,600;6..12,700;6..12,800;6..12,900;6..12,1000&amp;display=swap" rel="stylesheet">
     <!-- Flag icon css -->
-    <link rel="stylesheet" href="../assets/css/vendors/flag-icon.css">
+    <link rel="stylesheet" href="{% static 'assets/css/vendors/flag-icon.css' %}">
     <!-- iconly-icon-->
-    <link rel="stylesheet" href="../assets/css/iconly-icon.css">
-    <link rel="stylesheet" href="../assets/css/bulk-style.css">
+    <link rel="stylesheet" href="{% static 'assets/css/iconly-icon.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/bulk-style.css' %}">
     <!-- iconly-icon-->
-    <link rel="stylesheet" href="../assets/css/themify.css">
+    <link rel="stylesheet" href="{% static 'assets/css/themify.css' %}">
     <!--fontawesome-->
-    <link rel="stylesheet" href="../assets/css/fontawesome-min.css">
+    <link rel="stylesheet" href="{% static 'assets/css/fontawesome-min.css' %}">
     <!-- Whether Icon css-->
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/weather-icons/weather-icons.min.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/scrollbar.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick.css">
-    <link rel="stylesheet" type="text/css" href="../assets/css/vendors/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/weather-icons/weather-icons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/vendors/timeline/timeline.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/scrollbar.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/slick.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/vendors/slick-theme.css' %}">
     <!-- App css -->
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link id="color" rel="stylesheet" href="../assets/css/color-1.css" media="screen">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link id="color" rel="stylesheet" href="{% static 'assets/css/color-1.css' %}" media="screen">
   </head>
   <body>
+    <!-- page-wrapper Start-->
     <!-- tap on top starts-->
     <div class="tap-top"><i class="iconly-Arrow-Up icli"></i></div>
     <!-- tap on tap ends-->
@@ -41,11 +44,11 @@
     <div class="loader-wrapper">
       <div class="loader"><span></span><span></span><span></span><span></span><span></span></div>
     </div>
-    <div class="page-wrapper compact-wrapper" id="pageWrapper"> 
+    <div class="page-wrapper compact-wrapper" id="pageWrapper">
       <header class="page-header row">
-        <div class="logo-wrapper d-flex align-items-center col-auto"><a href="index.html"><img class="light-logo img-fluid" src="../assets/images/logo/logo1.png" alt="logo"><img class="dark-logo img-fluid" src="../assets/images/logo/logo-dark.png" alt="logo"></a><a class="close-btn toggle-sidebar" href="javascript:void(0)">
+        <div class="logo-wrapper d-flex align-items-center col-auto"><a href="index.html"><img class="light-logo img-fluid" src="{% static 'assets/images/logo/logo1.png' %}" alt="logo"><img class="dark-logo img-fluid" src="{% static 'assets/images/logo/logo-dark.png' %}" alt="logo"></a><a class="close-btn toggle-sidebar" href="javascript:void(0)">
             <svg class="svg-color">
-              <use href="../assets/svg/iconly-sprite.svg#Category"></use>
+              <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Category"></use>
             </svg></a></div>
         <div class="page-main-header col">
           <div class="header-left">
@@ -86,21 +89,21 @@
               </li>
               <li class="search d-lg-none d-flex"> <a href="javascript:void(0)">
                   <svg>
-                    <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Search"></use>
                   </svg></a></li>
               <li>  <a class="dark-mode" href="javascript:void(0)">
                   <svg>
-                    <use href="../assets/svg/iconly-sprite.svg#moondark"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#moondark"></use>
                   </svg></a></li>
               <li class="custom-dropdown"><a href="javascript:void(0)">
                   <svg>
-                    <use href="../assets/svg/iconly-sprite.svg#cart-icon"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#cart-icon"></use>
                   </svg></a><span class="badge rounded-pill badge-primary">2</span>
                 <div class="custom-menu cart-dropdown py-0 overflow-hidden">
                   <h3 class="title dropdown-title">Cart</h3>
                   <ul class="pb-0">
                     <li>
-                      <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/dashboard-2/1.png" alt="">
+                      <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60" src="{% static 'assets/images/dashboard-2/1.png' %}" alt="">
                         <div class="flex-grow-1"><span class="f-w-600">Watch multicolor</span>
                           <div class="qty-box">
                             <div class="input-group"><span class="input-group-prepend">
@@ -115,7 +118,7 @@
                       </div>
                     </li>
                     <li>
-                      <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60" src="../assets/images/dashboard-2/2.png" alt="">
+                      <div class="d-flex"><img class="img-fluid b-r-5 me-3 img-60" src="{% static 'assets/images/dashboard-2/2.png' %}" alt="">
                         <div class="flex-grow-1"><span class="f-w-600">Airpods</span>
                           <div class="qty-box">
                             <div class="input-group"><span class="input-group-prepend">
@@ -138,7 +141,7 @@
               </li>
               <li class="custom-dropdown"><a href="javascript:void(0)">
                   <svg>
-                    <use href="../assets/svg/iconly-sprite.svg#notification"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#notification"></use>
                   </svg></a><span class="badge rounded-pill badge-primary">4</span>
                 <div class="custom-menu notification-dropdown py-0 overflow-hidden">
                   <h3 class="title bg-primary-light dropdown-title">Notification <span class="font-primary">View all</span></h3>
@@ -149,7 +152,7 @@
                       <div class="flex-grow-1">
                         <h6 class="f-w-600 font-primary">30-04-2024<span>Today</span><span class="circle-dot-primary float-end">
                             <svg class="circle-color">
-                              <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                              <use href="{% static 'assets/svg/iconly-sprite.svg' %}#circle"></use>
                             </svg></span></h6>
                         <h5>Alice Goodwin</h5>
                         <p class="mb-0">Fashion should be fun. It shouldn't be labelled intellectual.</p>
@@ -160,7 +163,7 @@
                                     <div class="flex-grow-1">
                                       <h6 class="f-w-600 font-secondary">28-06-2024<span>1 hour ago</span><span class="float-end circle-dot-secondary">
                                           <svg class="circle-color">
-                                            <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                            <use href="{% static 'assets/svg/iconly-sprite.svg' %}#circle"></use>
                                           </svg></span></h6>
                                       <h5>Herry Venter</h5>
                                       <p>I am convinced that there can be luxury in simplicity.</p>
@@ -171,7 +174,7 @@
                                     <div class="flex-grow-1">
                                       <h6 class="f-w-600 font-primary">04-08-2024<span>Today</span><span class="float-end circle-dot-primary">
                                           <svg class="circle-color">
-                                            <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                            <use href="{% static 'assets/svg/iconly-sprite.svg' %}#circle"></use>
                                           </svg></span></h6>
                                       <h5>Loain Deo</h5>
                                       <p>I feel that things happen for open new opportunities.</p>
@@ -182,7 +185,7 @@
                                     <div class="flex-grow-1">
                                       <h6 class="f-w-600 font-secondary">12-11-2024<span>Yesterday</span><span class="float-end circle-dot-secondary">
                                           <svg class="circle-color">
-                                            <use href="../assets/svg/iconly-sprite.svg#circle"></use>
+                                            <use href="{% static 'assets/svg/iconly-sprite.svg' %}#circle"></use>
                                           </svg></span></h6>
                                       <h5>Fenter Jessy</h5>
                                       <p>Sometimes the simplest things are the most profound.</p>
@@ -193,11 +196,11 @@
               </li>
               <li><a class="full-screen" href="javascript:void(0)"> 
                   <svg>
-                    <use href="../assets/svg/iconly-sprite.svg#scanfull"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#scanfull"></use>
                   </svg></a></li>
               <li class="custom-dropdown"><a href="javascript:void(0)">
                   <svg>
-                    <use href="../assets/svg/iconly-sprite.svg#bookmark"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#bookmark"></use>
                   </svg></a>
                 <div class="custom-menu bookmark-dropdown py-0 overflow-hidden">
                   <h3 class="title bg-primary-light dropdown-title">Bookmark</h3>
@@ -207,7 +210,7 @@
                         <div class="input-group">
                           <input class="form-control" type="text" placeholder="Search Bookmark..."><span class="input-group-text">
                             <svg class="svg-color">
-                              <use href="../assets/svg/iconly-sprite.svg#Search"></use>
+                              <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Search"></use>
                             </svg></span>
                         </div>
                       </form>
@@ -215,33 +218,33 @@
                                   <li class="d-flex align-items-center">
                                     <div class="flex-shrink-0 me-2 btn-activity-primary"><a href="index.html">
                                         <svg class="svg-color">
-                                          <use href="../assets/svg/iconly-sprite.svg#cube"></use>
+                                          <use href="{% static 'assets/svg/iconly-sprite.svg' %}#cube"></use>
                                         </svg></a></div>
                                     <div class="d-flex justify-content-between align-items-center w-100"><a href="index.html">Dashboard</a>
                                       <svg class="svg-color icon-star">
-                                        <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#star"></use>
                                       </svg>
                                     </div>
                                   </li>
                                   <li class="d-flex align-items-center">
                                     <div class="flex-shrink-0 me-2 btn-activity-secondary"><a href="to-do.html">
                                         <svg class="svg-color">
-                                          <use href="../assets/svg/iconly-sprite.svg#check"></use>
+                                          <use href="{% static 'assets/svg/iconly-sprite.svg' %}#check"></use>
                                         </svg></a></div>
                                     <div class="d-flex justify-content-between align-items-center w-100"><a href="to-do.html">To-do</a>
                                       <svg class="svg-color icon-star">
-                                        <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#star"></use>
                                       </svg>
                                     </div>
                                   </li>
                                   <li class="d-flex align-items-center">
                                     <div class="flex-shrink-0 me-2 btn-activity-danger"><a href="apex_chart.html">
                                         <svg class="svg-color">
-                                          <use href="../assets/svg/iconly-sprite.svg#pie"></use>
+                                          <use href="{% static 'assets/svg/iconly-sprite.svg' %}#pie"></use>
                                         </svg></a></div>
                                     <div class="d-flex justify-content-between align-items-center w-100"><a href="apex_chart.html">Chart</a>
                                       <svg class="svg-color icon-star">
-                                        <use href="../assets/svg/iconly-sprite.svg#star"></use>
+                                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#star"></use>
                                       </svg>
                                     </div>
                                   </li>
@@ -264,7 +267,7 @@
                   <h3>15</h3></a></li>
               <li class="profile-nav custom-dropdown">
                 <div class="user-wrap">
-                  <div class="user-img"><img src="../assets/images/profile.png" alt="user"></div>
+                  <div class="user-img"><img src="{% static 'assets/images/profile.png' %}" alt="user"></div>
                   <div class="user-content">
                     <h6>Ava Davis</h6>
                     <p class="mb-0">Admin<i class="fa-solid fa-chevron-down"></i></p>
@@ -274,22 +277,22 @@
                   <ul class="profile-body">
                     <li class="d-flex"> 
                       <svg class="svg-color">
-                        <use href="../assets/svg/iconly-sprite.svg#Profile"></use>
+                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Profile"></use>
                       </svg><a class="ms-2" href="user-profile.html">Account</a>
                     </li>
                     <li class="d-flex"> 
                       <svg class="svg-color">
-                        <use href="../assets/svg/iconly-sprite.svg#Message"></use>
+                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Message"></use>
                       </svg><a class="ms-2" href="letter-box.html">Inbox</a>
                     </li>
                     <li class="d-flex"> 
                       <svg class="svg-color">
-                        <use href="../assets/svg/iconly-sprite.svg#Document"></use>
+                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Document"></use>
                       </svg><a class="ms-2" href="to-do.html">Task</a>
                     </li>
                     <li class="d-flex"> 
                       <svg class="svg-color">
-                        <use href="../assets/svg/iconly-sprite.svg#Login"></use>
+                        <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Login"></use>
                       </svg><a class="ms-2" href="login.html">Log Out</a>
                     </li>
                   </ul>
@@ -299,6 +302,7 @@
           </div>
         </div>
       </header>
+      <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page sidebar start-->
         <aside class="page-sidebar"> 
@@ -317,7 +321,7 @@
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)"> 
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Home-dashboard"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Home-dashboard"></use>
                   </svg>
                   <h6>Dashboards</h6><span class="badge">3</span><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -328,7 +332,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Pie"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Pie"></use>
                   </svg>
                   <h6 class="lan-2">Widgets </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -338,7 +342,7 @@
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Document"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Document"></use>
                   </svg>
                   <h6 class="lan-3">Page layout</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -354,7 +358,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Info-circle"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Info-circle"></use>
                   </svg>
                   <h6 class="f-w-600">Project</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -364,17 +368,17 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="file-manager.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Paper"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Paper"></use>
                   </svg>
                   <h6 class="f-w-600">File Manager </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="kanban-board.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Wallet"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Wallet"></use>
                   </svg>
                   <h6 class="f-w-600">Kanban board</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Bag"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Bag"></use>
                   </svg>
                   <h6 class="f-w-600">Ecommerce</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -403,12 +407,12 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="letter-box.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Message"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Message"></use>
                   </svg>
                   <h6 class="f-w-600">Letter Box</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Chat"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Chat"></use>
                   </svg>
                   <h6 class="f-w-600">Chat</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -418,7 +422,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Profile"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Profile"></use>
                   </svg>
                   <h6 class="f-w-600">Users</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -429,37 +433,37 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="bookmark.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Bookmark"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Bookmark"></use>
                   </svg>
                   <h6 class="f-w-600">Bookmarks</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="contacts.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Contacts"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Contacts"></use>
                   </svg>
                   <h6 class="f-w-600">Contacts   </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="task.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Tick-square"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Tick-square"></use>
                   </svg>
                   <h6 class="f-w-600">Tasks</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="calendar-basic.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Calendar"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Calendar"></use>
                   </svg>
                   <h6 class="f-w-600">Calendar  </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="social-app.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Camera"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Camera"></use>
                   </svg>
                   <h6 class="f-w-600">Social App</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="to-do.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Edit"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Edit"></use>
                   </svg>
                   <h6 class="f-w-600">To-Do </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="search.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Search-sidebar"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Search-sidebar"></use>
                   </svg>
                   <h6 class="f-w-600">Search Result                                                </h6></a></li>
               <li class="sidebar-main-title">
@@ -469,12 +473,12 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="buttons.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#More-box"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#More-box"></use>
                   </svg>
                   <h6 class="f-w-600">buttons </h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Folder"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Folder"></use>
                   </svg>
                   <h6 class="f-w-600">Ui Kits</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -496,7 +500,7 @@
               </li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Ticket-star"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Ticket-star"></use>
                   </svg>
                   <h6 class="f-w-600">Bonus Ui</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
@@ -522,7 +526,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Category"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Category"></use>
                   </svg>
                   <h6 class="f-w-600">Animation </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
@@ -532,7 +536,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Activity"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Activity"></use>
                   </svg>
                   <h6 class="f-w-600">Icon</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu"> 
@@ -544,7 +548,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Chart"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Chart"></use>
                   </svg>
                   <h6 class="f-w-600">Charts</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -567,7 +571,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Filter"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Filter"></use>
                   </svg>
                   <h6 class="f-w-600">Forms</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -602,7 +606,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Edit-line"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Edit-line"></use>
                   </svg>
                   <h6 class="f-w-600">Tables</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -631,27 +635,27 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="landing-page.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Wallet"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Wallet"></use>
                   </svg>
                   <h6 class="f-w-600">Landing page</h6></a></li>
               <li class="sidebar-list"><i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="sample-page.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Paper-plus"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Paper-plus"></use>
                   </svg>
                   <h6 class="f-w-600">Sample page</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="internationalization.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Play"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Play"></use>
                   </svg>
                   <h6 class="f-w-600">Internationalization</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="../starter-kit/index.html" target="_blank">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Star-kit"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Star-kit"></use>
                   </svg>
                   <h6 class="f-w-600">Starter kit</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Password"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Password"></use>
                   </svg>
                   <h6 class="f-w-600">Others</h6><i class="iconly-Arrow-Right-2 icli"> </i></a>
                 <ul class="sidebar-submenu">
@@ -709,7 +713,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Gallery"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Gallery"></use>
                   </svg>
                   <h6 class="f-w-600">Gallery  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -722,7 +726,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Game"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Game"></use>
                   </svg>
                   <h6 class="f-w-600">Blog  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -733,12 +737,12 @@
               </li>
               <li class="sidebar-list"><a class="sidebar-link" href="faq.html"> 
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Danger"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Danger"></use>
                   </svg>
                   <h6 class="f-w-600">FAQ</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Filter-2"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Filter-2"></use>
                   </svg>
                   <h6 class="f-w-600">Job Search  </h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -750,7 +754,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Work"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Work"></use>
                   </svg>
                   <h6 class="f-w-600">Learning</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -760,7 +764,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Discovery"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Discovery"></use>
                   </svg>
                   <h6 class="f-w-600">Maps</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -770,7 +774,7 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="javascript:void(0)">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Shield"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Shield"></use>
                   </svg>
                   <h6 class="f-w-600">Editors</h6><i class="iconly-Arrow-Right-2 icli"></i></a>
                 <ul class="sidebar-submenu">
@@ -780,12 +784,12 @@
               </li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="knowledgebase.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Setting"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Setting"></use>
                   </svg>
                   <h6 class="f-w-600">Knowledgebase</h6></a></li>
               <li class="sidebar-list"> <i class="fa-solid fa-thumbtack"></i><a class="sidebar-link" href="support-ticket.html">
                   <svg class="stroke-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#Ticket"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#Ticket"></use>
                   </svg>
                   <h6 class="f-w-600">Support Ticket</h6></a></li>
             </ul>
@@ -793,151 +797,288 @@
           <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>
         </aside>
         <!-- Page sidebar end-->
-        <div class="page-body">
+        <div class="page-body"> 
           <div class="container-fluid">
             <div class="page-title">
               <div class="row">
                 <div class="col-sm-6 col-12">
-                  <h2>Mega Options</h2>
+                  <h2>Timeline</h2>
                 </div>
                 <div class="col-sm-6 col-12">
                   <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html"><i class="iconly-Home icli svg-color"></i></a></li>
-                    <li class="breadcrumb-item">Form Controls</li>
-                    <li class="breadcrumb-item active">Mega Options</li>
+                    <li class="breadcrumb-item">Bonus Ui  </li>
+                    <li class="breadcrumb-item active">Timeline</li>
                   </ol>
                 </div>
               </div>
             </div>
           </div>
           <!-- Container-fluid starts-->
-          <div class="container-fluid mega-option">
+          <div class="container-fluid">
             <div class="row">
-              <div class="col-12"> 
+              <div class="col-xl-6 box-col-6 notification main-timeline">
                 <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Variation radio</h3>
-                    <p class="mt-1 mb-0">
-                       Use the <code>radio </code>attribute through create variation of radio designs.</p>
+                  <div class="card-header card-no-border pb-0"> 
+                    <h3>Basic Timeline </h3>
+                    <p class="mt-1 mb-0">Use the<code>.main-basic-timeline</code>class through made basic timeline.</p>
                   </div>
                   <div class="card-body">
-                    <div class="row g-3">
-                      <div class="col-xl-4 col-md-6">
-                        <div class="card-wrapper border rounded-3 h-100 checkbox-checked">
-                          <h5 class="sub-title">Select your payment method</h5>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm11" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0" for="ptm11">BOB</label>
-                              </div>
-                            </div>
-                            <div class="payment-second"><img class="img-fluid" src="../assets/images/ecommerce/card.png" alt="card"></div>
+                    <ul>
+                      <li class="d-flex">
+                        <div class="timeline-dot-primary"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">2 Feb 2024</span><span>7:00 AM</span></p>
+                          <h6 class="f-w-600">CONFERENCE WITH CLIENT<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">At noon today, there will be a meeting with a UK client.</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="timeline-dot-secondary"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">22 March 2024</span><span>3:45 PM</span></p>
+                          <h6 class="f-w-600">DISCUSSION WITH MARKETING TEAM<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">discussion with the marketing staff on the success of the most recent project</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="timeline-dot-success"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">16 May 2024</span><span>1:22 AM</span></p>
+                          <h6 class="f-w-600">INVEST IN A NEW HOSTING PLAN<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">today at 2 pm AM, purchase a new hosting package as agreed upon with the management team.</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="timeline-dot-warning"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">23 Nov 2024</span><span>6:56 AM</span></p>
+                          <h6 class="f-w-600"> DISCUSSION WITH DESIGNER TEAM<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">discussion with the designer employee on the success of the most recent project.    </p>
+                        </div>
+                      </li>
+                      <li class="d-flex"> 
+                        <div class="timeline-dot-danger"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">02 Jan 2024</span><span>6:56 AM</span></p>
+                          <h6 class="f-w-600">PURCHASE NEW CHAIRS FOR OFFICE<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">online purchase new chairs for office</p>
+                        </div>
+                      </li>
+                      <li class="d-flex"> 
+                        <div class="timeline-dot-info"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">02 march 2024</span><span>1:22 AM</span></p>
+                          <h6 class="f-w-600">DISCUSSION WITH MARKETING TEAM<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">discussion with the designer employee on the success of the most recent project.</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-6">  
+                <div class="card">
+                  <div class="card-header card-no-border pb-0">
+                    <h3>Hovering Timeline</h3>
+                    <p class="mt-1 mb-0">Use the<code>.square-timeline</code> main class through create new variations of timeline.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul class="square-timeline">
+                      <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-wrapper">
+                          <p class="timeline-thumbnail">January 2024- Annual Function</p>
+                          <h5>Location</h5><span class="text-muted">Largo Febo,10225012-Calvisano BS</span>
+                          <p class="pt-3 mb-4">What a dynamic performance by the eighth-grade students, Let's welcome the ninth-grade kid to the stage.</p>
+                        </div>
+                      </li>
+                      <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-wrapper">
+                          <p class="timeline-thumbnail">March 2024 - Fresher Interview</p>
+                          <h5 class="f-w-600">Ofwrrior Company</h5>
+                          <div class="text-muted">A fresher's interview is to be conducted
+                            <div class="list-group main-lists-content"><a class="list-group-item list-group-item-action border-0 p-0 mb-3" href="#" aria-current="true">
+                                <div class="d-flex w-100 justify-content-between align-items-center">
+                                  <div class="list-wrapper"><img class="list-img" src="{% static 'assets/images/user/1.jpg' %}" alt="profile">
+                                    <div class="list-content">
+                                      <h6>Molly Boake</h6>
+                                      <p>MollyBoake@rhyta.com</p>
+                                    </div>
+                                  </div>
+                                  <div class="timeline-icon"><i class="icon-facebook font-primary"></i><i class="icon-google font-primary"> </i><i class="icon-twitter-alt font-primary"></i></div>
+                                </div>
+                                <p class="mb-1">Next step is to choose a tone of voice for your content type.</p></a></div>
                           </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm22" type="radio" name="radio1" value="option1" checked="">
-                                <label class="form-check-label mb-0" for="ptm22">MasterCard</label>
+                        </div>
+                      </li>
+                      <li class="timeline-event">
+                        <label class="timeline-event-icon"></label>
+                        <div class="timeline-event-wrapper">
+                          <p class="timeline-thumbnail">December 2024 - Meetup</p>
+                          <h5 class="f-w-600">US Meeting</h5>
+                          <div class="text-muted">2209 Leverton Cove RoadSpringfield, MA 01109
+                            <div class="designer-details">
+                              <div class="designer-profile"> 
+                                <div class="designer-wrap"><img class="designer-img" src="{% static 'assets/images/avtar/4.jpg' %}" alt="profile">
+                                  <div class="designer-content"> 
+                                    <h6>Lillian J. Goodfellow</h6>
+                                    <p>239-664-7751</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="designer-profile"> 
+                                <div class="designer-wrap"><img class="designer-img" src="{% static 'assets/images/avtar/7.jpg' %}" alt="profile">
+                                  <div class="designer-content">
+                                    <h6>Carolyn A. Sutton</h6>
+                                    <p>218-793-6609</p>
+                                  </div>
+                                </div>
                               </div>
                             </div>
-                            <div class="payment-second"><img class="img-fluid" src="../assets/images/ecommerce/mastercard.png" alt="card"></div>
                           </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm33" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0" for="ptm33">Paypal</label>
-                              </div>
-                            </div>
-                            <div class="payment-second"><img class="img-fluid" src="../assets/images/ecommerce/paypal.png" alt="card"></div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-4 col-xl-5 notification box-col-12">
+                <div class="card">
+                  <div class="card-header card-no-border pb-0">
+                    <h3>Variation Timelinep</h3>
+                    <p class="mt-1 mb-0">
+                       Use the <code>.activity-dot-primary </code>through rounded animations.</p>
+                  </div>
+                  <div class="card-body">
+                    <ul>
+                      <li class="d-flex">
+                        <div class="activity-dot-primary"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">8th March, 2024 </span><span>1 day ago</span></p>
+                          <h6 class="f-w-600">Updated Product<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">Quisque a consequat ante sit amet magna...</p>
+                        </div>
+                      </li>
+                      <li class="d-flex">
+                        <div class="activity-dot-warning"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">5th Feb, 2024 </span><span>Today</span></p>
+                          <h6 class="f-w-600">Added Bew Items<span class="dot-notification"></span></h6><span class="f-m-light">Quisque a consequat ante sit amet magna...</span>
+                          <div class="recent-images"> 
+                            <ul>
+                              <li>
+                                <div class="recent-img-wrap"><img src="{% static 'assets/images/dashboard-2/1.png' %}" alt="chair"></div>
+                              </li>
+                              <li> 
+                                <div class="recent-img-wrap"><img src="{% static 'assets/images/dashboard-2/2.png' %}" alt="chair"></div>
+                              </li>
+                              <li>
+                                <div class="recent-img-wrap"><img src="{% static 'assets/images/dashboard-2/3.png' %}" alt="men t-shirt"></div>
+                              </li>
+                            </ul>
                           </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm44" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0" for="ptm44">VISA</label>
-                              </div>
+                        </div>
+                      </li>
+                      <li class="d-flex pb-0">
+                        <div class="activity-dot-secondary"></div>
+                        <div class="w-100 ms-3">
+                          <p class="d-flex justify-content-between mb-2"><span class="date-content bg-light-primary">20th Sep, 2024 </span><span>12:00 PM</span></p>
+                          <h6 class="f-w-600">Tello just like your product<span class="dot-notification"></span></h6>
+                          <p class="f-m-light">Quisque a consequat ante sit amet magna...   </p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxl-8 col-xl-7 box-col-12">
+                <div class="card">
+                  <div class="card-header card-no-border pb-0"> 
+                    <h3>Horizontal Timeline </h3>
+                    <p class="mt-1 mb-0">
+                       Use the<code>.square-timeline</code> main class through create new variations of timeline. </p>
+                  </div>
+                  <div class="card-body">
+                    <div class="list-inline events timeline-list timeline-border row">
+                      <div class="col-xxl-4 col-sm-6">
+                        <div>
+                          <div class="list-inline-item event-list">
+                            <div class="px-4">
+                              <div class="event-date alert-light-primary text-primary">1 Jan</div>
+                              <h5 class="f-w-600">Conference </h5>
+                              <p class="text-muted">Conferences are intended to bring individuals with similar interests together to discuss problems.</p>
+                              <div class="read-more-btn"><a class="btn btn-primary px-3" href="javascript:void(0)">Read more</a></div>
                             </div>
-                            <div class="payment-second"><img class="img-fluid" src="../assets/images/ecommerce/visa.png" alt="card"></div>
+                          </div>
+                          <div class="vertical-line"></div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-4 col-sm-6">
+                        <div>
+                          <div class="list-inline-item event-list">
+                            <div class="px-4">
+                              <div class="event-date alert-light-success text-success">4 Feb</div>
+                              <h5 class="f-w-600">Meet-up</h5>
+                              <p class="text-muted">You may connect with males from all around the world using the friend-forward.</p>
+                              <div class="read-more-btn"><a class="btn btn-primary px-3" href="javascript:void(0)">Read more</a></div>
+                            </div>
+                          </div>
+                          <div class="vertical-line"></div>
+                        </div>
+                      </div>
+                      <div class="col-xxl-4 horizontal-timeline">
+                        <div>
+                          <div class="list-inline-item event-list">
+                            <div class="px-4">
+                              <div class="event-date alert-light-danger text-danger">22 March</div>
+                              <h5 class="f-w-600">Meeting</h5>
+                              <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular social networking platform.</p>
+                              <div class="read-more-btn"><a class="btn btn-primary px-3" href="javascript:void(0)">Read more</a></div>
+                            </div>
+                          </div>
+                          <div class="vertical-line"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="list-inline events border-0 timeline-list row">
+                      <div class="col-xxl-4 col-sm-6">
+                        <div> 
+                          <div class="vertical-line"></div>
+                          <div class="list-inline-item event-list">
+                            <div class="px-4">
+                              <div class="event-date alert-light-primary text-primary">1 Jan</div>
+                              <h5 class="f-w-600">Conference </h5>
+                              <p class="text-muted">A gathering of two or more people to talk about issues of interest.</p>
+                              <div><a class="btn btn-primary px-3" href="javascript:void(0)">Read more</a></div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-4 col-md-6">
-                        <div class="card-wrapper border rounded-3 h-100 checkbox-checked">
-                          <h5 class="sub-title">What are the most important things to learn about web design?</h5>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm101" type="radio" name="radio3" value="option1">
-                                <label class="form-check-label mb-0" for="ptm101">A. HTML </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm201" type="radio" name="radio3" value="option1">
-                                <label class="form-check-label mb-0" for="ptm201">B. CSS</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm301" type="radio" name="radio3" value="option1" checked="">
-                                <label class="form-check-label mb-0" for="ptm301">C. Javascript</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm401" type="radio" name="radio3" value="option1">
-                                <label class="form-check-label mb-0" for="ptm401">D. Above the all </label>
-                              </div>
+                      <div class="col-xxl-4 col-sm-6">
+                        <div>
+                          <div class="vertical-line"> </div>
+                          <div class="list-inline-item event-list">
+                            <div class="px-4">
+                              <div class="event-date alert-light-danger text-danger">22 March</div>
+                              <h5 class="f-w-600">Meeting</h5>
+                              <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular social networking platform.</p>
+                              <div><a class="btn btn-primary px-3" href="javascript:void(0)">Read more</a></div>
                             </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-xl-4">
-                        <div class="card-wrapper border rounded-3 h-100 checkbox-checked">
-                          <h5 class="sub-title">Radios With Creative Options & SVG Icons</h5>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm100" type="radio" name="radio2" value="option1">
-                                <label class="form-check-label mb-0" for="ptm100">The notification icon displayed new messages.</label>
-                              </div>
+                      <div class="col-xxl-4 horizontal-timeline">
+                        <div>
+                          <div class="vertical-line"> </div>
+                          <div class="list-inline-item event-list">
+                            <div class="px-4">
+                              <div class="event-date alert-light-warning text-warning">7 Dec</div>
+                              <h5 class="f-w-600">Launch Theme</h5>
+                              <p class="text-muted">Responsive Website is the approach that suggests website design and development should respond.</p>
+                              <div><a class="btn btn-primary px-3" href="javascript:void(0)">Read more                                                                                   </a></div>
                             </div>
-                            <div class="payment-second"><i class="mega-icons stroke-danger" data-feather="bell"></i></div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm200" type="radio" name="radio2" value="option1">
-                                <label class="form-check-label mb-0" for="ptm200">The download icon indicated completion.</label>
-                              </div>
-                            </div>
-                            <div class="payment-second"><i class="mega-icons stroke-success" data-feather="calendar"></i></div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm300" type="radio" name="radio2" value="option1" checked="">
-                                <label class="form-check-label mb-0" for="ptm300">The tag icon allowed easy categorization.</label>
-                              </div>
-                            </div>
-                            <div class="payment-second"><i class="mega-icons stroke-dark" data-feather="tag"></i></div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="ptm400" type="radio" name="radio2" value="option1">
-                                <label class="form-check-label mb-0" for="ptm400">The email icon was inaccessibly located.</label>
-                              </div>
-                            </div>
-                            <div class="payment-second"><i class="mega-icons stroke-primary" data-feather="mail"></i></div>
                           </div>
                         </div>
                       </div>
@@ -946,477 +1087,116 @@
                 </div>
               </div>
               <div class="col-sm-12"> 
-                <div class="card"> 
-                  <div class="card-header card-no-border pb-0"> 
-                    <h3>Variation checkbox </h3>
-                    <p class="mt-1 mb-0">
-                       We can create any creative design by using <code>(type='checkbox')</code>attribute.</p>
-                  </div>
-                  <div class="card-body"> 
-                    <div class="row g-3">
-                      <div class="col-xl-4 col-md-5">
-                        <div class="card-wrapper border rounded-3 h-100 checkbox-checked">
-                          <h5 class="sub-title">Which of the following activities do you enjoy doing in your free time?</h5>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check checkbox checkbox-success">
-                                <input class="form-check-input" id="check-a" type="checkbox">
-                                <label class="form-check-label mb-0" for="check-a">Reading </label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check checkbox checkbox-success">
-                                <input class="form-check-input" id="check-b" type="checkbox" checked="">
-                                <label class="form-check-label mb-0" for="check-b">Watching TV</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check checkbox checkbox-danger">
-                                <input class="form-check-input" id="check-c" type="checkbox">
-                                <label class="form-check-label mb-0" for="check-c">Listening to music</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check checkbox checkbox-danger">
-                                <input class="form-check-input" id="check-d" type="checkbox">
-                                <label class="form-check-label mb-0" for="check-d">Playing video games</label>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="payment-wrapper">
-                            <div class="payment-first">
-                              <div class="form-check checkbox checkbox-success">
-                                <input class="form-check-input" id="check-e" type="checkbox">
-                                <label class="form-check-label mb-0" for="check-e">Painting/Drawing</label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-xl-8 col-md-7">
-                        <div class="card-wrapper border rounded-3 h-100 checkbox-checked">
-                          <section class="main-upgrade">
-                            <div> <i class="fa-solid fa-rocket"></i>
-                              <h5 class="mb-2">It&apos;s time to <span class="text-primary">upgrade</span></h5>
-                              <p class="text-muted mb-2">Select the theme that best suits your requirements, and you're ready to go!</p>
-                            </div>
-                            <div class="variation-box">
-                              <div class="selection-box">
-                                <input id="feature1" type="checkbox">
-                                <div class="custom--mega-checkbox">
-                                  <ul class="d-flex flex-column">
-                                    <li>Voxo</li>
-                                    <li class="text-primary">270 Sales</li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="selection-box">
-                                <input id="feature2" type="checkbox">
-                                <div class="custom--mega-checkbox">
-                                  <ul class="d-flex flex-column">
-                                    <li>Admiro</li>
-                                    <li class="text-primary">4.8K Sales</li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="selection-box">
-                                <input id="feature3" type="checkbox">
-                                <div class="custom--mega-checkbox">
-                                  <ul class="d-flex flex-column">
-                                    <li>Multikart </li>
-                                    <li class="text-primary">2.6k Sales</li>
-                                  </ul>
-                                </div>
-                              </div>
-                              <div class="selection-box">
-                                <input id="feature4" type="checkbox" checked="">
-                                <div class="custom--mega-checkbox">
-                                  <ul class="d-flex flex-column">
-                                    <li>Viho</li>
-                                    <li class="text-primary">2k Sales</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </section>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xxl-6 box-col-6">
                 <div class="card">
                   <div class="card-header card-no-border pb-0">
-                    <h3>Default style</h3>
+                    <h3>Timeline  </h3>
                     <p class="mt-1 mb-0">
-                       This option is show by default you don't need to add any extra class.</p>
-                  </div>
-                  <div class="card-body megaoptions-border-space-sm">
-                    <form class="mega-inline">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-primary m-0">
-                                <input class="form-check-input" id="radio14" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label" for="radio14"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">COD<span class="badge badge-primary pull-right digits">50 INR</span></span><span>Estimated 2 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-secondary m-0">
-                                <input class="form-check-input" id="radio13" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label" for="radio13"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">Fast<span class="badge badge-secondary pull-right digits">100 INR</span></span><span>Estimated 1 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary m-r-15" type="submit">Submit</button>
-                    <button class="btn btn-light text-dark" type="submit">Cancel</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xxl-6 box-col-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Without borders style</h3>
-                    <p class="mt-1 mb-0">
-                       By adding <code>.plain-style </code>class to <code>.mega-inline</code> You can archive this style</p>
+                       This is a Admiro timeline chart.</p>
                   </div>
                   <div class="card-body">
-                    <form class="mega-inline plain-style">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check checkbox checkbox-warning m-0">
-                                <input class="form-check-input" id="checkbox11" type="checkbox" checked="">
-                                <label class="form-check-label" for="checkbox11"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">$39<span class="badge badge-warning pull-right digits">100 MBPS</span></span><span>Plans for 2/4/6 months are offered to new clients.</span></span></label>
-                              </div>
-                            </div>
+                    <!-- cd-timeline Start-->
+                    <section class="cd-container" id="cd-timeline">
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture bg-primary"><i class="icon-pencil-alt"></i></div>
+                        <div class="cd-timeline-content">
+                          <div class="timeline-wrapper">
+                            <div class="badge bg-warning">app-ideas</div>
                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check checkbox checkbox-info m-0">
-                                <input class="form-check-input" id="checkbox22" type="checkbox">
-                                <label class="form-check-label" for="checkbox22"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">$50<span class="badge badge-info pull-right digits">Hired</span></span><span>Plans for 2 years projects offered to new clients.</span></span></label>
-                              </div>
-                            </div>
-                          </div>
+                          <h5 class="f-w-600 m-0">Established new the app-ideas repository.</h5>
+                          <p class="mb-0">
+                              developers who are just beginning their learning process. those who often concentrate on developing programmes with a user interface.</p>
+                          <div class="time-content pt-2"><i class="icon-github"></i>
+                            <h6 class="f-w-600">View it on Github      </h6>
+                          </div><span class="cd-date">February 02 2024</span>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-warning m-r-15" type="submit">Submit</button>
-                    <button class="btn list-light-warning" type="submit">Cancel</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xxl-6 box-col-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Solid border style</h3>
-                    <p class="mt-1 mb-0">
-                       Use the <code>.border-style</code> class to <code>.mega-inline</code> you can archive this style.</p>
-                  </div>
-                  <div class="card-body megaoptions-border-space-sm">
-                    <form class="mega-inline border-style">
-                      <div class="row flex-column">
-                        <div class="col-12">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="radio15" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label my-0" for="radio15"><span class="flex-grow-1"><span class="d-flex list-behavior-1"><span class="flex-shrink-0"><img class="tab-img img-fluid" src="../assets/images/blog/img.png" alt="home"></span><span class="flex-grow-1"><span class="mb-0">We provide end to end digital solutions, right from designing your website/application development: Domain, Web Hosting, Email Hosting Registration.</span></span></span></span></label>
-                              </div>
-                            </div>
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img bg-danger"> <i class="icon-youtube"></i></div>
+                        <div class="cd-timeline-content">
+                          <div class="timeline-wrapper">
+                            <div class="badge bg-danger">Blog</div>
                           </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-primary">
-                                <input class="form-check-input" id="radio16" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label my-0" for="radio16"><span class="flex-grow-1"><span class="d-flex list-behavior-1"><span class="flex-shrink-0"> <img class="tab-img img-fluid" src="../assets/images/blog/blog.jpg" alt="home"></span><span class="flex-grow-1"><span class="mb-0">When someone visits your homepage, your design should inspire them to stay. Therefore, your value proposition should be established on the homepage for visitors.</span></span></span></span></label>
-                              </div>
-                            </div>
-                          </div>
+                          <h5 class="f-w-600 m-0">Implemented the program for weekly code challenges.</h5>
+                          <p class="mb-0">
+                              Challenges <em class="font-danger">help you build problem-solving skills, better understand the programming. </em>If you want to improve your skills in programming.           </p>
+                          <div class="ratio ratio-21x9 m-t-20">
+                            <iframe src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen=""></iframe>
+                          </div><span class="cd-date">March 12 2024</span>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary m-r-15" type="submit">Submit</button>
-                    <button class="btn btn-light text-dark" type="submit">Cancel</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xxl-6 box-col-6">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Offer style border</h3>
-                    <p class="mt-1 mb-0">
-                       Use the <code>.offer-style </code>class to<code> .mega-inline</code> you can archive this style.</p>
-                  </div>
-                  <div class="card-body megaoptions-border-space-sm">
-                    <form class="mega-inline offer-style">
-                      <div class="row flex-column">
-                        <div class="col-12">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check checkbox checkbox-success">
-                                <input class="form-check-input" id="checkbox50" type="checkbox">
-                                <label class="form-check-label my-0" for="checkbox50"><span class="flex-grow-1"><span class="d-flex list-behavior-1"><span class="flex-shrink-0"><img class="tab-img img-fluid" src="../assets/images/email-template/11.jpg" alt="fruits"></span><span class="flex-grow-1"><span class="mb-0">Fruits are an essential part of a healthy diet, and offer many health benefits. They're packed with vitamins, minerals, and fiber, which can help improve digestion.</span></span></span></span></label>
-                              </div>
-                            </div>
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture bg-success"><i class="icon-image"></i></div>
+                        <div class="cd-timeline-content">
+                          <div class="timeline-wrapper">
+                            <div class="badge bg-info">Designer</div>
                           </div>
-                        </div>
-                        <div class="col-12">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check checkbox checkbox-danger">
-                                <input class="form-check-input" id="checkbox101" type="checkbox" checked="">
-                                <label class="form-check-label my-0" for="checkbox101"><span class="flex-grow-1"><span class="d-flex list-behavior-1"><span class="flex-shrink-0"> <img class="tab-img img-fluid" src="../assets/images/email-template/10.jpg" alt="flowers"></span><span class="flex-grow-1"><span class="mb-0">Flowers have long been used to express feelings and sentiments, and each bloom has its own distinct significance. For instance, while daisies signify innocence and purity.</span></span></span></span></label>
-                              </div>
+                          <h5 class="f-w-600 m-0">Research about most recent design trends.</h5>
+                          <p class="mb-0">
+                              Spend some time looking up current design trend.         </p>
+                          <div class="carousel slide" id="carouselExampleIndicators" data-bs-ride="true">
+                            <div class="carousel-indicators">
+                              <button class="active" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
                             </div>
-                          </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active"><img class="d-block w-100" src="{% static 'assets/images/banner/2.jpg' %}" alt="office-work"></div>
+                              <div class="carousel-item"><img class="d-block w-100" src="{% static 'assets/images/banner/1.jpg' %}" alt="office-work"></div>
+                              <div class="carousel-item"><img class="d-block w-100" src="{% static 'assets/images/banner/3.jpg' %}" alt="office-work"></div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                          </div><span class="cd-date">April 23 2024</span>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-success m-r-15" type="submit">Submit</button>
-                    <button class="btn list-light-success" type="submit">Cancel</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12">
-                <div class="card">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Inline style</h3>
-                    <p class="mt-1 mb-0">
-                       For Create inline megaoption add <code>.mega-inline</code> class in form tag</p>
-                  </div>
-                  <div class="card-body megaoptions-border-space-sm">
-                    <form class="mega-inline">
-                      <div class="row">
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-warning m-0 w-100">
-                                <input class="form-check-input" id="radio19" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio19"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">COD<span class="badge badge-warning pull-right digits">50 INR</span></span><span>Estimated 14-20 Day Shipping ( Duties end taxes may be due upon delivery )</span></span></label>
-                              </div>
-                            </div>
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location bg-info"><i class="icon-pulse"></i></div>
+                        <div class="cd-timeline-content">
+                          <div class="timeline-wrapper">
+                            <div class="badge bg-primary">Audio testing</div>
                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-secondary m-0 w-100">
-                                <input class="form-check-input" id="radio20" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio20"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Fast<span class="badge badge-secondary pull-right digits">100 INR</span></span><span>Estimated 1 Day Shipping ( Duties end taxes may be due upon delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-secondary m-0 w-100">
-                                <input class="form-check-input" id="radio21" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio21"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Standard<span class="badge badge-secondary pull-right digits">80 INR</span></span><span>Estimated 3 Day Shipping ( Duties end taxes may be due upon delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-warning m-0 w-100">
-                                <input class="form-check-input" id="radio22" type="radio" name="radio1" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio22"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Local <span class="badge badge-warning pull-right digits">Free</span></span><span>Estimated 15 Day Shipping ( Duties end taxes may be due upon delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
+                          <h5 class="f-w-600 m-0">Musical trends and predictability</h5>
+                          <p class="mb-0">
+                              So, the next time you listen to music, you might or might not consider how it's actively altering your mood.</p>
+                          <audio controls="">
+                            <source src="{% static 'assets/audio/horse.ogg' %}" type="audio/ogg">
+                          </audio><span class="cd-date">June 12 2024</span>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-warning m-r-15" type="submit">Submit</button>
-                    <button class="btn list-light-warning" type="submit">Cancel</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xxl-6 box-col-12">
-                <div class="card height-equal">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Vertical style</h3>
-                    <p class="mt-1 mb-0">vertical style in mega-options. Use the <code>.mega-vertical </code>class through created vertical alignments.</p>
-                  </div>
-                  <div class="card-body">
-                    <form class="mega-vertical">
-                      <div class="row">
-                        <div class="col-sm-12">
-                          <p class="mega-title mb-3">Delivery Option</p>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-primary m-0 w-100">
-                                <input class="form-check-input" id="radio23" type="radio" name="radio5" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio23"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">COD<span class="badge badge-primary pull-right digits">50 INR</span></span><span>Estimated 10 to 15 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-location bg-secondary"><i class="icon-pin-alt"></i></div>
+                        <div class="cd-timeline-content">
+                          <div class="timeline-wrapper">
+                            <div class="badge bg-success">Meet-up</div>
                           </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-secondary m-0 w-100">
-                                <input class="form-check-input" id="radio24" type="radio" name="radio5" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio24"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">Fast <span class="badge badge-secondary pull-right digits">100 INR</span></span><span>Estimated 10 to 12 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-success m-0 w-100">
-                                <input class="form-check-input" id="radio25" type="radio" name="radio5" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio25"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">Standard <span class="badge badge-success pull-right digits">80 INR</span></span><span>Estimated 3 to 5 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-info m-0 w-100">
-                                <input class="form-check-input" id="radio5" type="radio" name="radio5" value="option1" checked="">
-                                <label class="form-check-label mb-0 w-100" for="radio5"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">Local <span class="badge badge-info pull-right digits">Free</span></span><span>Estimated 3 to 5 Day Shipping ( Duties end taxes may be due upon delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-12">
-                          <p class="mega-title mb-3">Buying Option</p>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-warning m-0 w-100">
-                                <input class="form-check-input" id="radio26" type="radio" name="radio7" value="option1" checked="">
-                                <label class="form-check-label mb-0 w-100" for="radio26"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Pixelstrap<span class="badge badge-warning pull-right digits">250 INR</span></span><span class="rating-star-wrapper"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning m-r-5"></i>5 start rating</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-6">
-                          <div class="card mb-0">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-danger m-0 w-100">
-                                <input class="form-check-input" id="radio27" type="radio" name="radio7" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio27"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Multikart<span class="badge badge-danger pull-right digits">150 INR</span></span><span class="rating-star-wrapper"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star m-r-5"></i>2 start rating</span></span></label>
-                              </div>
-                            </div>
-                          </div>
+                          <h5 class="f-w-600 m-0">Web-designer's meet-up</h5>
+                          <p class="mb-0">
+                              Find nearby web designers to network with! A Web Design Meetup is a place where you can discuss tools.                        </p>
+                          <div class="time-content pt-2"><i class="icon-android"></i>
+                            <h6 class="f-w-600">Please! Meet-up</h6>
+                          </div><span class="cd-date">November 04 2024</span>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary m-r-15" type="submit">Submit</button>
-                    <button class="btn btn-light text-dark" type="submit">Cancel</button>
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-12 col-xxl-6 box-col-12">
-                <div class="card height-equal">
-                  <div class="card-header card-no-border pb-0">
-                    <h3>Horizontal style</h3>
-                    <p class="mt-1 mb-0">horizontal style in mega-options. Use the <code>.mega-horizontal</code> class through created horizontal alignments.</p>
-                  </div>
-                  <div class="card-body">
-                    <form class="mega-horizontal">
-                      <div class="row">
-                        <div class="col-sm-3">
-                          <p class="mega-title">Delivery Option</p>
-                        </div>
-                        <div class="col-sm-9">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-primary m-0 w-100">
-                                <input class="form-check-input" id="radio30" type="radio" name="radio22" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio30"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">COD<span class="badge badge-primary pull-right digits">50 INR</span></span><span>Estimated 5 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
+                      <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie bg-danger"><i class="icon-agenda"></i></div>
+                        <div class="cd-timeline-content">
+                          <div class="timeline-wrapper">
+                            <div class="badge bg-warning">Resolutions</div>
                           </div>
-                        </div>
-                        <div class="col-sm-9 offset-sm-3">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-secondary m-0 w-100">
-                                <input class="form-check-input" id="radio31" type="radio" name="radio22" value="option1" checked="">
-                                <label class="form-check-label mb-0 w-100" for="radio31"><span class="flex-grow-1 megaoption-space"><span class="mt-0 mega-title-badge">Fast <span class="badge badge-secondary pull-right digits">100 INR</span></span><span>Estimated 1 Day Shipping ( Duties end tax may be due delivery )</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-3">
-                          <p class="mega-title">Buying Option</p>
-                        </div>
-                        <div class="col-sm-9">
-                          <div class="card">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-success m-0 w-100">
-                                <input class="form-check-input" id="radio32" type="radio" name="radio23" value="option1">
-                                <label class="form-check-label mb-0 w-100" for="radio32"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Pixelstrap<span class="badge badge-success pull-right digits">250 INR</span></span><span class="rating-star-wrapper"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star text-warning m-r-5"></i>5 start rating</span></span></label>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-sm-9 offset-sm-3">
-                          <div class="card mb-0">
-                            <div class="d-flex p-20">
-                              <div class="form-check radio radio-info m-0 w-100">
-                                <input class="form-check-input" id="radio33" type="radio" name="radio23" value="option1" checked="">
-                                <label class="form-check-label mb-0 w-100" for="radio33"><span class="flex-grow-1"><span class="mt-0 mega-title-badge">Tivo<span class="badge badge-info pull-right digits">150 INR</span></span><span class="rating-star-wrapper"><i class="fa-solid fa-star text-warning"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star m-r-5"></i>1 start rating</span></span></label>
-                              </div>
-                            </div>
-                          </div>
+                          <h5 class="f-w-600 m-0">My Resolutions for 2024</h5>
+                          <p class="mb-0">
+                              I'm determined to streamline, organism, systematism, realign, and embrace life in 2024.                          </p>
+                          <div class="time-content pt-2"><i class="icon-write"></i>
+                            <h6 class="f-w-600">My Resolutions    </h6>
+                          </div><span class="cd-date">December 31 2024 </span>
                         </div>
                       </div>
-                    </form>
-                  </div>
-                  <div class="card-footer text-end">
-                    <button class="btn btn-primary m-r-15" type="submit">Submit</button>
-                    <button class="btn btn-light text-dark" type="submit">Cancel</button>
+                    </section>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Container-fluid Ends-->
         </div>
         <footer class="footer"> 
           <div class="container-fluid">
@@ -1427,7 +1207,7 @@
               <div class="col-md-6">
                 <p class="float-end mb-0">Hand crafted &amp; made with
                   <svg class="svg-color footer-icon">
-                    <use href="../assets/svg/iconly-sprite.svg#heart"></use>
+                    <use href="{% static 'assets/svg/iconly-sprite.svg' %}#heart"></use>
                   </svg>
                 </p>
               </div>
@@ -1437,26 +1217,27 @@
       </div>
     </div>
     <!-- jquery-->
-    <script src="../assets/js/vendors/jquery/jquery.min.js"></script>
+    <script src="{% static 'assets/js/vendors/jquery/jquery.min.js' %}"></script>
     <!-- bootstrap js-->
-    <script src="../assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js" defer=""></script>
-    <script src="../assets/js/vendors/bootstrap/dist/js/popper.min.js" defer=""></script>
+    <script src="{% static 'assets/js/vendors/bootstrap/dist/js/bootstrap.bundle.min.js' %}" defer=""></script>
+    <script src="{% static 'assets/js/vendors/bootstrap/dist/js/popper.min.js' %}" defer=""></script>
     <!--fontawesome-->
-    <script src="../assets/js/vendors/font-awesome/fontawesome-min.js"></script>
-    <!-- feather-->
-    <script src="../assets/js/vendors/feather-icon/feather.min.js"></script>
-    <script src="../assets/js/vendors/feather-icon/custom-script.js"></script>
+    <script src="{% static 'assets/js/vendors/font-awesome/fontawesome-min.js' %}"></script>
     <!-- sidebar -->
-    <script src="../assets/js/sidebar.js"></script>
+    <script src="{% static 'assets/js/sidebar.js' %}"></script>
+    <!-- timeline -->
+    <script src="{% static 'assets/js/timeline/timeline.js' %}"></script>
+    <!--modernizr-->
+    <script src="{% static 'assets/js/timeline/modernizr.js' %}"></script>
     <!-- scrollbar-->
-    <script src="../assets/js/scrollbar/simplebar.js"></script>
-    <script src="../assets/js/scrollbar/custom.js"></script>
+    <script src="{% static 'assets/js/scrollbar/simplebar.js' %}"></script>
+    <script src="{% static 'assets/js/scrollbar/custom.js' %}"></script>
     <!-- slick-->
-    <script src="../assets/js/slick/slick.min.js"></script>
-    <script src="../assets/js/slick/slick.js"></script>
+    <script src="{% static 'assets/js/slick/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/slick/slick.js' %}"></script>
     <!-- theme_customizer-->
-    <script src="../assets/js/theme-customizer/customizer.js"></script>
+    <script src="{% static 'assets/js/theme-customizer/customizer.js' %}"></script>
     <!-- custom script -->
-    <script src="../assets/js/script.js"></script>
+    <script src="{% static 'assets/js/script.js' %}"></script>
   </body>
 </html>
