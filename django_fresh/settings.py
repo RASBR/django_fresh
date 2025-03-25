@@ -86,6 +86,11 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # AllAuth Settings
 SITE_ID = 1
+# Explicitly set deprecated settings to None to override any defaults
+ACCOUNT_AUTHENTICATION_METHOD = None
+ACCOUNT_EMAIL_REQUIRED = None
+ACCOUNT_USERNAME_REQUIRED = None
+# Keep the new settings
 ACCOUNT_LOGIN_METHODS = {'email'}
 ACCOUNT_SIGNUP_FIELDS = ['email*', 'password1*', 'password2*']
 AUTHENTICATION_BACKENDS = [
